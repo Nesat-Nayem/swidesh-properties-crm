@@ -198,7 +198,7 @@
                     <div class="d-flex align-items-center">
                       <div class="sidebar-profile-img">
                         <img
-                          src="assets/images/faces/face1.jpg"
+                          src="crm/assets/images/faces/face1.jpg"
                           alt="image"
                           style="width: 30px"
                         />
