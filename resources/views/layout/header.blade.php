@@ -172,12 +172,19 @@
                     Actions
                   </h5>
 
-                  <a
+                  <!-- <a
                     class="dropdown-item py-1 d-flex align-items-center justify-content-between"
                     href="index.html">
                     <span>Log Out</span>
                     <i class="mdi mdi-logout ml-1"></i>
+                  </a> -->
+                  <form method="POST" action="{{ route('logout') }}">
+                  @csrf
+                  <a class="dropdown-item py-1 d-flex align-items-center justify-content-between" href="{{ route('logout') }}" onclick="event.preventDefault(); this.closest('form').submit();">
+                    <span>Log Out</span>
+                    <i class="mdi mdi-logout ml-1"></i>
                   </a>
+                </form>
                 </div>
               </div>
             </li>

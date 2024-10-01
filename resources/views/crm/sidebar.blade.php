@@ -199,9 +199,19 @@
     </li>
 
     <li class="nav-item sidebar-user-actions">
-      <div class="sidebar-user-menu">
+      <!-- <div class="sidebar-user-menu">
         <a href="index.html" class="nav-link"><i class="mdi mdi-logout menu-icon"></i>
           <span class="menu-title">Log Out</span></a>
+      </div> -->
+
+      <div class="sidebar-user-menu">
+        <form method="POST" action="{{ route('logout') }}">
+          @csrf
+          <a href="{{ route('logout') }}" class="nav-link" onclick="event.preventDefault(); this.closest('form').submit();">
+            <i class="mdi mdi-logout menu-icon"></i>
+            <span class="menu-title">Log Out</span>
+          </a>
+        </form>
       </div>
     </li>
   </ul>
