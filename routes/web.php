@@ -4,6 +4,7 @@ use App\Http\Controllers\CrmController;
 use App\Http\Controllers\ProfileController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\LeadController;
+use App\Http\Controllers\ContactController;
 
 // Route::get('/', function () {
 //     return view('dashboard');
@@ -17,6 +18,8 @@ Route::get('/', [CrmController::class, 'dashboard']);
 
 
 
+
+Route::resource('/contacts', ContactController::class);
 
 Route::resource('/leads', LeadController::class);
 

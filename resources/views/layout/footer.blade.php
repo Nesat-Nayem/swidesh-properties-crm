@@ -31,5 +31,12 @@
     
       document.getElementById('date-range').textContent = `${startDate} - ${endDate}`;
     </script>
+
+<script>
+    document.getElementById('cancelButton').addEventListener('click', function() {
+        window.location.href = "{{ route('contacts.index') }}";
+    });
+</script>
+
   </body>
 </html>

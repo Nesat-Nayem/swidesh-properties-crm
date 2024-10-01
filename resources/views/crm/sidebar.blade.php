@@ -34,7 +34,7 @@
             <a class="nav-link" href="opportunity.html">Builder Opportunities</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="contact.html">Contacts</a>
+            <a class="nav-link" href="contacts">Contacts</a>
           </li>
         </ul>
       </div>
