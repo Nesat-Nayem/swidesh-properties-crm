@@ -1,1277 +1,1423 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1, shrink-to-fit=no"
-    />
-    <title>Swadesh Properties</title>
-    <!-- plugins:css -->
-    <link
-      rel="stylesheet"
-      href="assets/vendors/mdi/css/materialdesignicons.min.css"
-    />
-    <link
-      rel="stylesheet"
-      href="assets/vendors/flag-icon-css/css/flag-icon.min.css"
-    />
-    <link rel="stylesheet" href="assets/vendors/css/vendor.bundle.base.css" />
-    <!-- endinject -->
-    <!-- Plugin css for this page -->
-    <link
-      rel="stylesheet"
-      href="assets/vendors/font-awesome/css/font-awesome.min.css"
-    />
-    <link
-      rel="stylesheet"
-      href="assets/vendors/bootstrap-datepicker/bootstrap-datepicker.min.css"
-    />
-    <!-- End plugin css for this page -->
-    <!-- inject:css -->
-    <!-- endinject -->
-    <!-- Layout styles -->
-    <link rel="stylesheet" href="assets/css/style.css" />
-    <!-- End layout styles -->
-    <link rel="shortcut icon" href="assets/images/logo.png" />
-  </head>
+    <head>
+        <!-- Required meta tags -->
+        <meta charset="utf-8" />
+        <meta
+            name="viewport"
+            content="width=device-width, initial-scale=1, shrink-to-fit=no"
+        />
+        <title>Swadesh Properties</title>
+        <!-- plugins:css -->
+        <link
+            rel="stylesheet"
+            href="assets/vendors/mdi/css/materialdesignicons.min.css"
+        />
+        <link
+            rel="stylesheet"
+            href="assets/vendors/flag-icon-css/css/flag-icon.min.css"
+        />
+        <link
+            rel="stylesheet"
+            href="assets/vendors/css/vendor.bundle.base.css"
+        />
+        <!-- endinject -->
+        <!-- Plugin css for this page -->
+        <link
+            rel="stylesheet"
+            href="assets/vendors/font-awesome/css/font-awesome.min.css"
+        />
+        <link
+            rel="stylesheet"
+            href="assets/vendors/bootstrap-datepicker/bootstrap-datepicker.min.css"
+        />
+        <!-- End plugin css for this page -->
+        <!-- inject:css -->
+        <!-- endinject -->
+        <!-- Layout styles -->
+        <link rel="stylesheet" href="assets/css/style.css" />
+        <!-- End layout styles -->
+        <link rel="shortcut icon" href="assets/images/logo.png" />
+    </head>
 
-  <body>
-    <div class="container-scroller">
-      <!-- partial:partials/_navbar.html -->
-      <nav
-        class="navbar default-layout-navbar col-lg-12 col-12 p-0 fixed-top d-flex flex-row"
-      >
-        <div
-          class="text-center navbar-brand-wrapper d-flex align-items-center justify-content-center"
-        >
-          <a class="navbar-brand brand-logo bg-white" href="index.html"
-            ><img src="assets/images/logo.png" alt="logo"
-          /></a>
-          <a class="navbar-brand brand-logo-mini" href="index.html"
-            ><img src="assets/images/logo.png" alt="logo"
-          /></a>
-        </div>
-        <div class="navbar-menu-wrapper d-flex align-items-stretch">
-          <button
-            class="navbar-toggler navbar-toggler align-self-center"
-            type="button"
-            data-toggle="minimize"
-          >
-            <span class="mdi mdi-menu"></span>
-          </button>
-          <div class="search-field d-none d-xl-block">
-            <form class="d-flex align-items-center h-100" action="#">
-              <div class="input-group">
-                <div class="input-group-prepend bg-transparent">
-                  <i class="input-group-text border-0 mdi mdi-magnify"></i>
-                </div>
-                <input
-                  type="text"
-                  class="form-control bg-transparent border-0"
-                  placeholder="Search..."
-                />
-              </div>
-            </form>
-          </div>
-          <ul class="navbar-nav navbar-nav-right">
-            <li class="nav-item dropdown d-none d-md-block">
-              <a
-                class="nav-link dropdown-toggle"
-                id="reportDropdown"
-                href="#"
-                data-toggle="dropdown"
-                aria-expanded="false"
-              >
-                Reports
-              </a>
-              <div
-                class="dropdown-menu navbar-dropdown"
-                aria-labelledby="reportDropdown"
-              >
-                <a class="dropdown-item" href="#">
-                  <i class="mdi mdi-file-pdf mr-2"></i>PDF
-                </a>
-                <div class="dropdown-divider"></div>
-                <a class="dropdown-item" href="#">
-                  <i class="mdi mdi-file-excel mr-2"></i>Excel
-                </a>
-                <div class="dropdown-divider"></div>
-                <a class="dropdown-item" href="#">
-                  <i class="mdi mdi-file-word mr-2"></i>doc
-                </a>
-              </div>
-            </li>
-            <li class="nav-item dropdown d-none d-md-block">
-              <a
-                class="nav-link dropdown-toggle"
-                id="projectDropdown"
-                href="#"
-                data-toggle="dropdown"
-                aria-expanded="false"
-              >
-                Add
-              </a>
-              <div
-                class="dropdown-menu navbar-dropdown"
-                aria-labelledby="projectDropdown"
-              >
-                <div class="dropdown-divider"></div>
-                <a class="dropdown-item" href="contact.html">
-                  <i class="mdi mdi-airplay mr-2"></i>Contact
-                </a>
-                <div class="dropdown-divider"></div>
-                <a class="dropdown-item" href="lead.html">
-                  <i class="mdi mdi-apps mr-2"></i>Lead
-                </a>
-                <div class="dropdown-divider"></div>
-                <a class="dropdown-item" href="opportunity.html">
-                  <i class="mdi mdi-heart-box-outline mr-2"></i>Builder
-                  Opportunity
-                </a>
-                <div class="dropdown-divider"></div>
-                <a class="dropdown-item" href="meeting.html">
-                  <i class="mdi mdi-google-physical-web mr-2"></i>Follow Up
-                </a>
-                <div class="dropdown-divider"></div>
-                <a class="dropdown-item" href="call.html">
-                  <i class="mdi mdi-phone-in-talk mr-2"></i>Call
-                </a>
-                <div class="dropdown-divider"></div>
-                <a class="dropdown-item" href="task.html">
-                  <i class="mdi mdi-filter-variant mr-2"></i>Task
-                </a>
-                <div class="dropdown-divider"></div>
-                <a class="dropdown-item" href="service-ticket.html">
-                  <i class="mdi mdi-file-document-box mr-2"></i>Service Ticket
-                </a>
-                <div class="dropdown-divider"></div>
-                <a class="dropdown-item" href="email.html">
-                  <i class="mdi mdi-email-outline mr-2"></i>EMail
-                </a>
-                <div class="dropdown-divider"></div>
-              </div>
-            </li>
-
-            <li class="nav-item nav-profile dropdown">
-              <a
-                class="nav-link dropdown-toggle"
-                id="profileDropdown"
-                href="#"
-                data-toggle="dropdown"
-                aria-expanded="false"
-              >
-                <div class="nav-profile-img">
-                  <img src="assets/images/faces/face1.jpg" alt="image" />
-                </div>
-                <div class="nav-profile-text">
-                  <p class="mb-1 text-black">Suraj Jamdade</p>
-                </div>
-              </a>
-              <div
-                class="dropdown-menu navbar-dropdown dropdown-menu-right p-0 border-0 font-size-sm"
-                aria-labelledby="profileDropdown"
-                data-x-placement="bottom-end"
-              >
-                <div class="p-3 text-center" style="background: #030336">
-                  <img
-                    class="img-avatar img-avatar48 img-avatar-thumb"
-                    src="assets/images/faces/face1.jpg"
-                    alt=""
-                  />
-                </div>
-                <div class="p-2">
-                  <h5 class="dropdown-header text-uppercase pl-2 text-dark">
-                    Suraj Jamdade
-                  </h5>
-
-                  <a
-                    class="dropdown-item py-1 d-flex align-items-center justify-content-between"
-                    href="profile.html"
-                  >
-                    <span>Profile</span>
-                    <i class="mdi mdi-settings"></i>
-                  </a>
-                  <div role="separator" class="dropdown-divider"></div>
-                  <h5
-                    class="dropdown-header text-uppercase pl-2 text-dark mt-2"
-                  >
-                    Actions
-                  </h5>
-
-                  <a
-                    class="dropdown-item py-1 d-flex align-items-center justify-content-between"
-                    href="index.html"
-                  >
-                    <span>Log Out</span>
-                    <i class="mdi mdi-logout ml-1"></i>
-                  </a>
-                </div>
-              </div>
-            </li>
-
-            <li class="nav-item dropdown">
-              <a
-                class="nav-link count-indicator dropdown-toggle"
-                id="messageDropdown"
-                href="#"
-                data-toggle="dropdown"
-                aria-expanded="false"
-              >
-                <i class="mdi mdi-email-outline"></i>
-                <span class="count-symbol bg-success"></span>
-              </a>
-              <div
-                class="dropdown-menu dropdown-menu-right navbar-dropdown preview-list"
-                aria-labelledby="messageDropdown"
-              >
-                <h6
-                  class="p-3 mb-0 text-white py-4"
-                  style="background: #030336"
+    <body>
+        <div class="container-scroller">
+            <!-- partial:partials/_navbar.html -->
+            <nav
+                class="navbar default-layout-navbar col-lg-12 col-12 p-0 fixed-top d-flex flex-row"
+            >
+                <div
+                    class="text-center navbar-brand-wrapper d-flex align-items-center justify-content-center"
                 >
-                  Messages
-                </h6>
-                <div class="dropdown-divider"></div>
-                <a class="dropdown-item preview-item">
-                  <div class="preview-thumbnail">
-                    <img
-                      src="assets/images/faces/face4.jpg"
-                      alt="image"
-                      class="profile-pic"
-                    />
-                  </div>
-                  <div
-                    class="preview-item-content d-flex align-items-start flex-column justify-content-center"
-                  >
-                    <h6
-                      class="preview-subject ellipsis mb-1 font-weight-normal"
-                    >
-                      Mark send you a message
-                    </h6>
-                    <p class="text-gray mb-0">1 Minutes ago</p>
-                  </div>
-                </a>
-                <div class="dropdown-divider"></div>
-                <a class="dropdown-item preview-item">
-                  <div class="preview-thumbnail">
-                    <img
-                      src="assets/images/faces/face2.jpg"
-                      alt="image"
-                      class="profile-pic"
-                    />
-                  </div>
-                  <div
-                    class="preview-item-content d-flex align-items-start flex-column justify-content-center"
-                  >
-                    <h6
-                      class="preview-subject ellipsis mb-1 font-weight-normal"
-                    >
-                      Cregh send you a message
-                    </h6>
-                    <p class="text-gray mb-0">15 Minutes ago</p>
-                  </div>
-                </a>
-                <div class="dropdown-divider"></div>
-                <a class="dropdown-item preview-item">
-                  <div class="preview-thumbnail">
-                    <img
-                      src="assets/images/faces/face3.jpg"
-                      alt="image"
-                      class="profile-pic"
-                    />
-                  </div>
-                  <div
-                    class="preview-item-content d-flex align-items-start flex-column justify-content-center"
-                  >
-                    <h6
-                      class="preview-subject ellipsis mb-1 font-weight-normal"
-                    >
-                      Profile picture updated
-                    </h6>
-                    <p class="text-gray mb-0">18 Minutes ago</p>
-                  </div>
-                </a>
-                <div class="dropdown-divider"></div>
-                <h6 class="p-3 mb-0 text-center">4 new messages</h6>
-              </div>
-            </li>
-
-            <li class="nav-item dropdown">
-              <a
-                class="nav-link count-indicator dropdown-toggle"
-                id="notificationDropdown"
-                href="#"
-                data-toggle="dropdown"
-              >
-                <i class="mdi mdi-bell-outline"></i>
-                <span class="count-symbol bg-danger"></span>
-              </a>
-              <div
-                class="dropdown-menu dropdown-menu-right navbar-dropdown preview-list"
-                aria-labelledby="notificationDropdown"
-              >
-                <h6
-                  class="p-3 mb-0 text-white py-4"
-                  style="background: #030336"
-                >
-                  Notifications
-                </h6>
-                <div class="dropdown-divider"></div>
-                <a class="dropdown-item preview-item">
-                  <div class="preview-thumbnail">
-                    <div class="preview-icon bg-success">
-                      <i class="mdi mdi-calendar"></i>
-                    </div>
-                  </div>
-                  <div
-                    class="preview-item-content d-flex align-items-start flex-column justify-content-center"
-                  >
-                    <h6 class="preview-subject font-weight-normal mb-1">
-                      Event today
-                    </h6>
-                    <p class="text-gray ellipsis mb-0">
-                      Just a reminder that you have an event today
-                    </p>
-                  </div>
-                </a>
-                <div class="dropdown-divider"></div>
-                <a class="dropdown-item preview-item">
-                  <div class="preview-thumbnail">
-                    <div class="preview-icon bg-warning">
-                      <i class="mdi mdi-settings"></i>
-                    </div>
-                  </div>
-                  <div
-                    class="preview-item-content d-flex align-items-start flex-column justify-content-center"
-                  >
-                    <h6 class="preview-subject font-weight-normal mb-1">
-                      Settings
-                    </h6>
-                    <p class="text-gray ellipsis mb-0">Update dashboard</p>
-                  </div>
-                </a>
-                <div class="dropdown-divider"></div>
-                <a class="dropdown-item preview-item">
-                  <div class="preview-thumbnail">
-                    <div class="preview-icon bg-info">
-                      <i class="mdi mdi-link-variant"></i>
-                    </div>
-                  </div>
-                  <div
-                    class="preview-item-content d-flex align-items-start flex-column justify-content-center"
-                  >
-                    <h6 class="preview-subject font-weight-normal mb-1">
-                      Launch Admin
-                    </h6>
-                    <p class="text-gray ellipsis mb-0">New admin wow!</p>
-                  </div>
-                </a>
-                <div class="dropdown-divider"></div>
-                <h6 class="p-3 mb-0 text-center">See all notifications</h6>
-              </div>
-            </li>
-          </ul>
-          <button
-            class="navbar-toggler navbar-toggler-right d-lg-none align-self-center"
-            type="button"
-            data-toggle="offcanvas"
-          >
-            <span class="mdi mdi-menu"></span>
-          </button>
-        </div>
-      </nav>
-      <!-- partial -->
-      <div class="container-fluid page-body-wrapper">
-        <!-- partial:partials/_sidebar.html -->
-        <nav class="sidebar sidebar-offcanvas" id="sidebar">
-          <ul class="nav">
-            <li class="nav-item nav-category">Main</li>
-            <li class="nav-item">
-              <a class="nav-link" href="dashboard.html">
-                <span class="icon-bg"
-                  ><i class="mdi mdi-cube menu-icon"></i
-                ></span>
-                <span class="menu-title">Dashboard</span>
-              </a>
-            </li>
-            <li class="nav-item">
-              <a
-                class="nav-link"
-                data-toggle="collapse"
-                href="#Customers"
-                aria-expanded="false"
-                aria-controls="ui-basic"
-              >
-                <span class="icon-bg"
-                  ><i class="mdi mdi-account menu-icon"></i
-                ></span>
-                <span class="menu-title">Customers</span>
-                <i class="menu-arrow"></i>
-              </a>
-              <div class="collapse" id="Customers">
-                <ul class="nav flex-column sub-menu">
-                  <li class="nav-item">
-                    <a class="nav-link" href="lead.html">Leads</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="opportunity.html"
-                      >Builder Opportunities</a
-                    >
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="contact.html">Contacts</a>
-                  </li>
-                </ul>
-              </div>
-            </li>
-            <li class="nav-item">
-              <a
-                class="nav-link"
-                data-toggle="collapse"
-                href="#Sales"
-                aria-expanded="false"
-                aria-controls="ui-basic"
-              >
-                <span class="icon-bg"
-                  ><i class="mdi mdi-currency-inr menu-icon"></i
-                ></span>
-                <span class="menu-title">Sales Automation</span>
-                <i class="menu-arrow"></i>
-              </a>
-              <div class="collapse" id="Sales">
-                <ul class="nav flex-column sub-menu">
-                  <li class="nav-item">
-                    <a class="nav-link" href="products.html">Products</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="expenses.html">Expenses</a>
-                  </li>
-
-                  <li class="nav-item">
-                    <a class="nav-link" href="payment-receipts.html"
-                      >Payment Receipts</a
-                    >
-                  </li>
-                </ul>
-              </div>
-            </li>
-            <li class="nav-item">
-              <a
-                class="nav-link"
-                data-toggle="collapse"
-                href="#Activities"
-                aria-expanded="false"
-                aria-controls="ui-basic"
-              >
-                <span class="icon-bg"
-                  ><i class="mdi mdi-gnome menu-icon"></i
-                ></span>
-                <span class="menu-title">Activities</span>
-                <i class="menu-arrow"></i>
-              </a>
-              <div class="collapse" id="Activities">
-                <ul class="nav flex-column sub-menu">
-                  <li class="nav-item">
-                    <a class="nav-link" href="call.html">Calls</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="email.html">Emails</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="meeting.html">Follow Up</a>
-                  </li>
-
-                  <li class="nav-item">
-                    <a class="nav-link" href="task.html">Tasks</a>
-                  </li>
-                </ul>
-              </div>
-            </li>
-
-            <li class="nav-item">
-              <a
-                class="nav-link"
-                data-toggle="collapse"
-                href="#Contracts"
-                aria-expanded="false"
-                aria-controls="ui-basic"
-              >
-                <span class="icon-bg"
-                  ><i class="mdi mdi-highway menu-icon"></i
-                ></span>
-                <span class="menu-title">Builder Contracts</span>
-                <i class="menu-arrow"></i>
-              </a>
-              <div class="collapse" id="Contracts">
-                <ul class="nav flex-column sub-menu">
-                  <li class="nav-item">
-                    <a class="nav-link" href="contracts-list.html"
-                      >Contracts List</a
-                    >
-                  </li>
-                </ul>
-              </div>
-            </li>
-            <li class="nav-item">
-              <a
-                class="nav-link"
-                data-toggle="collapse"
-                href="#Team"
-                aria-expanded="false"
-                aria-controls="ui-basic"
-              >
-                <span class="icon-bg"
-                  ><i class="mdi mdi-human-male-female menu-icon"></i
-                ></span>
-                <span class="menu-title">Team</span>
-                <i class="menu-arrow"></i>
-              </a>
-              <div class="collapse" id="Team">
-                <ul class="nav flex-column sub-menu">
-                  <li class="nav-item">
-                    <a class="nav-link" href="team-list.html">Team List</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="time-sheet.html">Time Sheet</a>
-                  </li>
-                </ul>
-              </div>
-            </li>
-
-            <li class="nav-item">
-              <a class="nav-link" href="reports.html">
-                <span class="icon-bg"
-                  ><i class="mdi mdi-format-list-bulleted menu-icon"></i
-                ></span>
-                <span class="menu-title">Reports</span>
-              </a>
-            </li>
-
-            <li class="nav-item">
-              <a
-                class="nav-link"
-                data-toggle="collapse"
-                href="#auth"
-                aria-expanded="false"
-                aria-controls="auth"
-              >
-                <span class="icon-bg"
-                  ><i class="mdi mdi-lock menu-icon"></i
-                ></span>
-                <span class="menu-title">User Pages</span>
-                <i class="menu-arrow"></i>
-              </a>
-              <div class="collapse" id="auth">
-                <ul class="nav flex-column sub-menu">
-                  <li class="nav-item">
-                    <a class="nav-link" href="profile.html"> Profile </a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="index.html"> Login </a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="register.html"> Register </a>
-                  </li>
-                </ul>
-              </div>
-            </li>
-
-            <li class="nav-item sidebar-user-actions mt-5">
-              <div class="user-details">
-                <div class="d-flex justify-content-between align-items-center">
-                  <div>
-                    <div class="d-flex align-items-center">
-                      <div class="sidebar-profile-img">
-                        <img
-                          src="assets/images/faces/face1.jpg"
-                          alt="image"
-                          style="width: 30px"
-                        />
-                      </div>
-                      <div class="sidebar-profile-text">
-                        <p class="mb-1">Suraj Jamdade</p>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="badge badge-danger">Admin</div>
+                    <a
+                        class="navbar-brand brand-logo bg-white"
+                        href="index.html"
+                        ><img src="assets/images/logo.png" alt="logo"
+                    /></a>
+                    <a class="navbar-brand brand-logo-mini" href="index.html"
+                        ><img src="assets/images/logo.png" alt="logo"
+                    /></a>
                 </div>
-              </div>
-            </li>
-            <li class="nav-item sidebar-user-actions">
-              <div class="sidebar-user-menu">
-                <a href="profile.html" class="nav-link"
-                  ><i class="mdi mdi-settings menu-icon"></i>
-                  <span class="menu-title">Settings</span>
-                </a>
-              </div>
-            </li>
-
-            <li class="nav-item sidebar-user-actions">
-              <div class="sidebar-user-menu">
-                <a href="index.html" class="nav-link"
-                  ><i class="mdi mdi-logout menu-icon"></i>
-                  <span class="menu-title">Log Out</span></a
-                >
-              </div>
-            </li>
-          </ul>
-        </nav>
-
-        <!-- partial -->
-        <div class="main-panel">
-          <div class="content-wrapper">
-            <div class="page-header">
-              <h3 class="page-title">Tasks</h3>
-              <nav aria-label="breadcrumb">
-                <ol class="breadcrumb">
-                  <li class="breadcrumb-item">
-                    <a href="task.html">Tasks</a>
-                  </li>
-                  <li class="breadcrumb-item active" aria-current="page">
-                    Tasks List
-                  </li>
-                </ol>
-              </nav>
-            </div>
-
-            <div class="row">
-              <div class="col-lg-12 grid-margin stretch-card">
-                <div class="card">
-                  <div class="card-body">
-                    <div class="d-flex justify-content-between mb-3">
-                      <div class="search-field" style="border: 1px solid #000">
+                <div class="navbar-menu-wrapper d-flex align-items-stretch">
+                    <button
+                        class="navbar-toggler navbar-toggler align-self-center"
+                        type="button"
+                        data-toggle="minimize"
+                    >
+                        <span class="mdi mdi-menu"></span>
+                    </button>
+                    <div class="search-field d-none d-xl-block">
                         <form
-                          class="d-flex align-items-center h-100"
-                          action="#"
+                            class="d-flex align-items-center h-100"
+                            action="#"
                         >
-                          <div class="input-group">
-                            <div class="input-group-prepend bg-transparent">
-                              <i
-                                class="input-group-text border-0 mdi mdi-magnify"
-                              ></i>
+                            <div class="input-group">
+                                <div class="input-group-prepend bg-transparent">
+                                    <i
+                                        class="input-group-text border-0 mdi mdi-magnify"
+                                    ></i>
+                                </div>
+                                <input
+                                    type="text"
+                                    class="form-control bg-transparent border-0"
+                                    placeholder="Search..."
+                                />
                             </div>
-                            <input
-                              type="text"
-                              class="form-control bg-transparent border-0"
-                              placeholder="Search..."
-                            />
-                          </div>
                         </form>
-                      </div>
-                      <a href="#">
-                        <button
-                          type="button"
-                          class="btn btn-outline-danger btn-icon-text"
-                          data-toggle="modal"
-                          data-target="#createModal"
-                        >
-                          <i class="mdi mdi-plus btn-icon-prepend"></i> Create
-                          Tasks
-                        </button>
-                      </a>
                     </div>
-
-                    <table class="table table-bordered">
-                      <thead>
-                        <tr>
-                          <th>Sr.No</th>
-                          <th>Title</th>
-                          <th>Project</th>
-                          <th>Deadline</th>
-                          <th>Assigned</th>
-                          <th>My Time</th>
-                          <th>Status</th>
-                          <th>Action</th>
-                        </tr>
-                      </thead>
-                      <tbody>
-                        <tr>
-                          <td>1</td>
-                          <td>Logo designs x 3</td>
-                          <td>WordPress Landing...</td>
-                          <td>--</td>
-                          <td>Suraj Jamdade</td>
-                          <td>50 min</td>
-
-                          <td>
-                            <div class="badge badge-success">New</div>
-                          </td>
-                          <td>
-                            <div
-                              class="btn-group"
-                              role="group"
-                              aria-label="Basic example"
+                    <ul class="navbar-nav navbar-nav-right">
+                        <li class="nav-item dropdown d-none d-md-block">
+                            <a
+                                class="nav-link dropdown-toggle"
+                                id="reportDropdown"
+                                href="#"
+                                data-toggle="dropdown"
+                                aria-expanded="false"
                             >
-                              <a href="#">
-                                <button
-                                  type="button"
-                                  class="btn btn-inverse-dark btn-icon mx-2"
-                                  title="Edit"
-                                  data-toggle="modal"
-                                  data-target="#statusModal"
-                                >
-                                  <i class="mdi mdi-table-edit"></i>
-                                </button>
-                              </a>
-                              <a href="#">
-                                <button
-                                  type="button"
-                                  class="btn btn-inverse-danger btn-icon mx-2"
-                                  title="Delete"
-                                  data-toggle="modal"
-                                  data-target="#exampleModal"
-                                >
-                                  <i class="mdi mdi-trash-can"></i>
-                                </button>
-                              </a>
+                                Reports
+                            </a>
+                            <div
+                                class="dropdown-menu navbar-dropdown"
+                                aria-labelledby="reportDropdown"
+                            >
+                                <a class="dropdown-item" href="#">
+                                    <i class="mdi mdi-file-pdf mr-2"></i>PDF
+                                </a>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item" href="#">
+                                    <i class="mdi mdi-file-excel mr-2"></i>Excel
+                                </a>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item" href="#">
+                                    <i class="mdi mdi-file-word mr-2"></i>doc
+                                </a>
                             </div>
-                          </td>
-                        </tr>
-                      </tbody>
-                    </table>
+                        </li>
+                        <li class="nav-item dropdown d-none d-md-block">
+                            <a
+                                class="nav-link dropdown-toggle"
+                                id="projectDropdown"
+                                href="#"
+                                data-toggle="dropdown"
+                                aria-expanded="false"
+                            >
+                                Add
+                            </a>
+                            <div
+                                class="dropdown-menu navbar-dropdown"
+                                aria-labelledby="projectDropdown"
+                            >
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item" href="contact.html">
+                                    <i class="mdi mdi-airplay mr-2"></i>Contact
+                                </a>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item" href="lead.html">
+                                    <i class="mdi mdi-apps mr-2"></i>Lead
+                                </a>
+                                <div class="dropdown-divider"></div>
+                                <a
+                                    class="dropdown-item"
+                                    href="opportunity.html"
+                                >
+                                    <i
+                                        class="mdi mdi-heart-box-outline mr-2"
+                                    ></i
+                                    >Builder Opportunity
+                                </a>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item" href="meeting.html">
+                                    <i
+                                        class="mdi mdi-google-physical-web mr-2"
+                                    ></i
+                                    >Follow Up
+                                </a>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item" href="call.html">
+                                    <i class="mdi mdi-phone-in-talk mr-2"></i
+                                    >Call
+                                </a>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item" href="task.html">
+                                    <i class="mdi mdi-filter-variant mr-2"></i
+                                    >Task
+                                </a>
+                                <div class="dropdown-divider"></div>
+                                <a
+                                    class="dropdown-item"
+                                    href="service-ticket.html"
+                                >
+                                    <i
+                                        class="mdi mdi-file-document-box mr-2"
+                                    ></i
+                                    >Service Ticket
+                                </a>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item" href="email.html">
+                                    <i class="mdi mdi-email-outline mr-2"></i
+                                    >EMail
+                                </a>
+                                <div class="dropdown-divider"></div>
+                            </div>
+                        </li>
 
-                    <div class="row mt-5 text-center">
-                      <div class="col-lg-12">
-                        <div
-                          class="btn-group"
-                          role="group"
-                          aria-label="Basic example"
-                        >
-                          <button
-                            type="button"
-                            class="btn btn-outline-secondary"
-                          >
-                            1
-                          </button>
-                          <button
-                            type="button"
-                            class="btn btn-outline-secondary"
-                          >
-                            2
-                          </button>
-                          <button
-                            type="button"
-                            class="btn btn-outline-secondary"
-                          >
-                            3
-                          </button>
+                        <li class="nav-item nav-profile dropdown">
+                            <a
+                                class="nav-link dropdown-toggle"
+                                id="profileDropdown"
+                                href="#"
+                                data-toggle="dropdown"
+                                aria-expanded="false"
+                            >
+                                <div class="nav-profile-img">
+                                    <img
+                                        src="assets/images/faces/face1.jpg"
+                                        alt="image"
+                                    />
+                                </div>
+                                <div class="nav-profile-text">
+                                    <p class="mb-1 text-black">David Smith</p>
+                                </div>
+                            </a>
+                            <div
+                                class="dropdown-menu navbar-dropdown dropdown-menu-right p-0 border-0 font-size-sm"
+                                aria-labelledby="profileDropdown"
+                                data-x-placement="bottom-end"
+                            >
+                                <div
+                                    class="p-3 text-center"
+                                    style="background: #030336"
+                                >
+                                    <img
+                                        class="img-avatar img-avatar48 img-avatar-thumb"
+                                        src="assets/images/faces/face1.jpg"
+                                        alt=""
+                                    />
+                                </div>
+                                <div class="p-2">
+                                    <h5
+                                        class="dropdown-header text-uppercase pl-2 text-dark"
+                                    >
+                                        David Smith
+                                    </h5>
+
+                                    <a
+                                        class="dropdown-item py-1 d-flex align-items-center justify-content-between"
+                                        href="profile.html"
+                                    >
+                                        <span>Profile</span>
+                                        <i class="mdi mdi-settings"></i>
+                                    </a>
+                                    <div
+                                        role="separator"
+                                        class="dropdown-divider"
+                                    ></div>
+                                    <h5
+                                        class="dropdown-header text-uppercase pl-2 text-dark mt-2"
+                                    >
+                                        Actions
+                                    </h5>
+
+                                    <a
+                                        class="dropdown-item py-1 d-flex align-items-center justify-content-between"
+                                        href="index.html"
+                                    >
+                                        <span>Log Out</span>
+                                        <i class="mdi mdi-logout ml-1"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </li>
+
+                        <li class="nav-item dropdown">
+                            <a
+                                class="nav-link count-indicator dropdown-toggle"
+                                id="messageDropdown"
+                                href="#"
+                                data-toggle="dropdown"
+                                aria-expanded="false"
+                            >
+                                <i class="mdi mdi-email-outline"></i>
+                                <span class="count-symbol bg-success"></span>
+                            </a>
+                            <div
+                                class="dropdown-menu dropdown-menu-right navbar-dropdown preview-list"
+                                aria-labelledby="messageDropdown"
+                            >
+                                <h6
+                                    class="p-3 mb-0 text-white py-4"
+                                    style="background: #030336"
+                                >
+                                    Messages
+                                </h6>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item preview-item">
+                                    <div class="preview-thumbnail">
+                                        <img
+                                            src="assets/images/faces/face4.jpg"
+                                            alt="image"
+                                            class="profile-pic"
+                                        />
+                                    </div>
+                                    <div
+                                        class="preview-item-content d-flex align-items-start flex-column justify-content-center"
+                                    >
+                                        <h6
+                                            class="preview-subject ellipsis mb-1 font-weight-normal"
+                                        >
+                                            Mark send you a message
+                                        </h6>
+                                        <p class="text-gray mb-0">
+                                            1 Minutes ago
+                                        </p>
+                                    </div>
+                                </a>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item preview-item">
+                                    <div class="preview-thumbnail">
+                                        <img
+                                            src="assets/images/faces/face2.jpg"
+                                            alt="image"
+                                            class="profile-pic"
+                                        />
+                                    </div>
+                                    <div
+                                        class="preview-item-content d-flex align-items-start flex-column justify-content-center"
+                                    >
+                                        <h6
+                                            class="preview-subject ellipsis mb-1 font-weight-normal"
+                                        >
+                                            Cregh send you a message
+                                        </h6>
+                                        <p class="text-gray mb-0">
+                                            15 Minutes ago
+                                        </p>
+                                    </div>
+                                </a>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item preview-item">
+                                    <div class="preview-thumbnail">
+                                        <img
+                                            src="assets/images/faces/face3.jpg"
+                                            alt="image"
+                                            class="profile-pic"
+                                        />
+                                    </div>
+                                    <div
+                                        class="preview-item-content d-flex align-items-start flex-column justify-content-center"
+                                    >
+                                        <h6
+                                            class="preview-subject ellipsis mb-1 font-weight-normal"
+                                        >
+                                            Profile picture updated
+                                        </h6>
+                                        <p class="text-gray mb-0">
+                                            18 Minutes ago
+                                        </p>
+                                    </div>
+                                </a>
+                                <div class="dropdown-divider"></div>
+                                <h6 class="p-3 mb-0 text-center">
+                                    4 new messages
+                                </h6>
+                            </div>
+                        </li>
+
+                        <li class="nav-item dropdown">
+                            <a
+                                class="nav-link count-indicator dropdown-toggle"
+                                id="notificationDropdown"
+                                href="#"
+                                data-toggle="dropdown"
+                            >
+                                <i class="mdi mdi-bell-outline"></i>
+                                <span class="count-symbol bg-danger"></span>
+                            </a>
+                            <div
+                                class="dropdown-menu dropdown-menu-right navbar-dropdown preview-list"
+                                aria-labelledby="notificationDropdown"
+                            >
+                                <h6
+                                    class="p-3 mb-0 text-white py-4"
+                                    style="background: #030336"
+                                >
+                                    Notifications
+                                </h6>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item preview-item">
+                                    <div class="preview-thumbnail">
+                                        <div class="preview-icon bg-success">
+                                            <i class="mdi mdi-calendar"></i>
+                                        </div>
+                                    </div>
+                                    <div
+                                        class="preview-item-content d-flex align-items-start flex-column justify-content-center"
+                                    >
+                                        <h6
+                                            class="preview-subject font-weight-normal mb-1"
+                                        >
+                                            Event today
+                                        </h6>
+                                        <p class="text-gray ellipsis mb-0">
+                                            Just a reminder that you have an
+                                            event today
+                                        </p>
+                                    </div>
+                                </a>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item preview-item">
+                                    <div class="preview-thumbnail">
+                                        <div class="preview-icon bg-warning">
+                                            <i class="mdi mdi-settings"></i>
+                                        </div>
+                                    </div>
+                                    <div
+                                        class="preview-item-content d-flex align-items-start flex-column justify-content-center"
+                                    >
+                                        <h6
+                                            class="preview-subject font-weight-normal mb-1"
+                                        >
+                                            Settings
+                                        </h6>
+                                        <p class="text-gray ellipsis mb-0">
+                                            Update dashboard
+                                        </p>
+                                    </div>
+                                </a>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item preview-item">
+                                    <div class="preview-thumbnail">
+                                        <div class="preview-icon bg-info">
+                                            <i class="mdi mdi-link-variant"></i>
+                                        </div>
+                                    </div>
+                                    <div
+                                        class="preview-item-content d-flex align-items-start flex-column justify-content-center"
+                                    >
+                                        <h6
+                                            class="preview-subject font-weight-normal mb-1"
+                                        >
+                                            Launch Admin
+                                        </h6>
+                                        <p class="text-gray ellipsis mb-0">
+                                            New admin wow!
+                                        </p>
+                                    </div>
+                                </a>
+                                <div class="dropdown-divider"></div>
+                                <h6 class="p-3 mb-0 text-center">
+                                    See all notifications
+                                </h6>
+                            </div>
+                        </li>
+                    </ul>
+                    <button
+                        class="navbar-toggler navbar-toggler-right d-lg-none align-self-center"
+                        type="button"
+                        data-toggle="offcanvas"
+                    >
+                        <span class="mdi mdi-menu"></span>
+                    </button>
+                </div>
+            </nav>
+            <!-- partial -->
+            <div class="container-fluid page-body-wrapper">
+                <!-- partial:partials/_sidebar.html -->
+                <nav class="sidebar sidebar-offcanvas" id="sidebar">
+                    <ul class="nav">
+                        <li class="nav-item nav-category">Main</li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="dashboard.html">
+                                <span class="icon-bg"
+                                    ><i class="mdi mdi-cube menu-icon"></i
+                                ></span>
+                                <span class="menu-title">Dashboard</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a
+                                class="nav-link"
+                                data-toggle="collapse"
+                                href="#Customers"
+                                aria-expanded="false"
+                                aria-controls="ui-basic"
+                            >
+                                <span class="icon-bg"
+                                    ><i class="mdi mdi-account menu-icon"></i
+                                ></span>
+                                <span class="menu-title">Customers</span>
+                                <i class="menu-arrow"></i>
+                            </a>
+                            <div class="collapse" id="Customers">
+                                <ul class="nav flex-column sub-menu">
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="lead.html"
+                                            >Leads</a
+                                        >
+                                    </li>
+                                    <li class="nav-item">
+                                        <a
+                                            class="nav-link"
+                                            href="opportunity.html"
+                                            >Builder Opportunities</a
+                                        >
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="contact.html"
+                                            >Contacts</a
+                                        >
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="nav-item">
+                            <a
+                                class="nav-link"
+                                data-toggle="collapse"
+                                href="#Sales"
+                                aria-expanded="false"
+                                aria-controls="ui-basic"
+                            >
+                                <span class="icon-bg"
+                                    ><i
+                                        class="mdi mdi-currency-inr menu-icon"
+                                    ></i
+                                ></span>
+                                <span class="menu-title">Sales Automation</span>
+                                <i class="menu-arrow"></i>
+                            </a>
+                            <div class="collapse" id="Sales">
+                                <ul class="nav flex-column sub-menu">
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="products.html"
+                                            >Products</a
+                                        >
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="expenses.html"
+                                            >Expenses</a
+                                        >
+                                    </li>
+
+                                    <li class="nav-item">
+                                        <a
+                                            class="nav-link"
+                                            href="payment-receipts.html"
+                                            >Payment Receipts</a
+                                        >
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="nav-item">
+                            <a
+                                class="nav-link"
+                                data-toggle="collapse"
+                                href="#Activities"
+                                aria-expanded="false"
+                                aria-controls="ui-basic"
+                            >
+                                <span class="icon-bg"
+                                    ><i class="mdi mdi-gnome menu-icon"></i
+                                ></span>
+                                <span class="menu-title">Activities</span>
+                                <i class="menu-arrow"></i>
+                            </a>
+                            <div class="collapse" id="Activities">
+                                <ul class="nav flex-column sub-menu">
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="call.html"
+                                            >Calls</a
+                                        >
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="email.html"
+                                            >Emails</a
+                                        >
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="meeting.html"
+                                            >Follow Up</a
+                                        >
+                                    </li>
+
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="task.html"
+                                            >Tasks</a
+                                        >
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+
+                        <li class="nav-item">
+                            <a
+                                class="nav-link"
+                                data-toggle="collapse"
+                                href="#Contracts"
+                                aria-expanded="false"
+                                aria-controls="ui-basic"
+                            >
+                                <span class="icon-bg"
+                                    ><i class="mdi mdi-highway menu-icon"></i
+                                ></span>
+                                <span class="menu-title"
+                                    >Builder Contracts</span
+                                >
+                                <i class="menu-arrow"></i>
+                            </a>
+                            <div class="collapse" id="Contracts">
+                                <ul class="nav flex-column sub-menu">
+                                    <li class="nav-item">
+                                        <a
+                                            class="nav-link"
+                                            href="contracts-list.html"
+                                            >Contracts List</a
+                                        >
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="nav-item">
+                            <a
+                                class="nav-link"
+                                data-toggle="collapse"
+                                href="#Team"
+                                aria-expanded="false"
+                                aria-controls="ui-basic"
+                            >
+                                <span class="icon-bg"
+                                    ><i
+                                        class="mdi mdi-human-male-female menu-icon"
+                                    ></i
+                                ></span>
+                                <span class="menu-title">Team</span>
+                                <i class="menu-arrow"></i>
+                            </a>
+                            <div class="collapse" id="Team">
+                                <ul class="nav flex-column sub-menu">
+                                    <li class="nav-item">
+                                        <a
+                                            class="nav-link"
+                                            href="team-list.html"
+                                            >Team List</a
+                                        >
+                                    </li>
+                                    <li class="nav-item">
+                                        <a
+                                            class="nav-link"
+                                            href="time-sheet.html"
+                                            >Time Sheet</a
+                                        >
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="reports.html">
+                                <span class="icon-bg"
+                                    ><i
+                                        class="mdi mdi-format-list-bulleted menu-icon"
+                                    ></i
+                                ></span>
+                                <span class="menu-title">Reports</span>
+                            </a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a
+                                class="nav-link"
+                                data-toggle="collapse"
+                                href="#auth"
+                                aria-expanded="false"
+                                aria-controls="auth"
+                            >
+                                <span class="icon-bg"
+                                    ><i class="mdi mdi-lock menu-icon"></i
+                                ></span>
+                                <span class="menu-title">User Pages</span>
+                                <i class="menu-arrow"></i>
+                            </a>
+                            <div class="collapse" id="auth">
+                                <ul class="nav flex-column sub-menu">
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="profile.html">
+                                            Profile
+                                        </a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="index.html">
+                                            Login
+                                        </a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a
+                                            class="nav-link"
+                                            href="register.html"
+                                        >
+                                            Register
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+
+                        <li class="nav-item sidebar-user-actions mt-5">
+                            <div class="user-details">
+                                <div
+                                    class="d-flex justify-content-between align-items-center"
+                                >
+                                    <div>
+                                        <div class="d-flex align-items-center">
+                                            <div class="sidebar-profile-img">
+                                                <img
+                                                    src="assets/images/faces/face1.jpg"
+                                                    alt="image"
+                                                    style="width: 30px"
+                                                />
+                                            </div>
+                                            <div class="sidebar-profile-text">
+                                                <p class="mb-1">David Smith</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="badge badge-danger">Admin</div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="nav-item sidebar-user-actions">
+                            <div class="sidebar-user-menu">
+                                <a href="profile.html" class="nav-link"
+                                    ><i class="mdi mdi-settings menu-icon"></i>
+                                    <span class="menu-title">Settings</span>
+                                </a>
+                            </div>
+                        </li>
+
+                        <li class="nav-item sidebar-user-actions">
+                            <div class="sidebar-user-menu">
+                                <a href="index.html" class="nav-link"
+                                    ><i class="mdi mdi-logout menu-icon"></i>
+                                    <span class="menu-title">Log Out</span></a
+                                >
+                            </div>
+                        </li>
+                    </ul>
+                </nav>
+
+                <!-- partial -->
+                <div class="main-panel">
+                    <div class="content-wrapper">
+                        <div class="page-header">
+                            <h3 class="page-title">Tasks</h3>
+                            <nav aria-label="breadcrumb">
+                                <ol class="breadcrumb">
+                                    <li class="breadcrumb-item">
+                                        <a href="task.html">Tasks</a>
+                                    </li>
+                                    <li
+                                        class="breadcrumb-item active"
+                                        aria-current="page"
+                                    >
+                                        Tasks List
+                                    </li>
+                                </ol>
+                            </nav>
                         </div>
-                      </div>
+
+                        <div class="row">
+                            <div class="col-lg-12 grid-margin stretch-card">
+                                <div class="card">
+                                    <div class="card-body">
+                                        <div
+                                            class="d-flex justify-content-between mb-3"
+                                        >
+                                            <div
+                                                class="search-field"
+                                                style="border: 1px solid #000"
+                                            >
+                                                <form
+                                                    class="d-flex align-items-center h-100"
+                                                    action="#"
+                                                >
+                                                    <div class="input-group">
+                                                        <div
+                                                            class="input-group-prepend bg-transparent"
+                                                        >
+                                                            <i
+                                                                class="input-group-text border-0 mdi mdi-magnify"
+                                                            ></i>
+                                                        </div>
+                                                        <input
+                                                            type="text"
+                                                            class="form-control bg-transparent border-0"
+                                                            placeholder="Search..."
+                                                        />
+                                                    </div>
+                                                </form>
+                                            </div>
+                                            <a href="#">
+                                                <button
+                                                    type="button"
+                                                    class="btn btn-outline-danger btn-icon-text"
+                                                    data-toggle="modal"
+                                                    data-target="#createModal"
+                                                >
+                                                    <i
+                                                        class="mdi mdi-plus btn-icon-prepend"
+                                                    ></i>
+                                                    Create Tasks
+                                                </button>
+                                            </a>
+                                        </div>
+
+                                        <table class="table table-bordered">
+                                            <thead>
+                                                <tr>
+                                                    <th>Sr.No</th>
+                                                    <th>Title</th>
+                                                    <th>Project</th>
+                                                    <th>Deadline</th>
+                                                    <th>Assigned</th>
+                                                    <th>My Time</th>
+                                                    <th>Status</th>
+                                                    <th>Action</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td>1</td>
+                                                    <td>Logo designs x 3</td>
+                                                    <td>
+                                                        WordPress Landing...
+                                                    </td>
+                                                    <td>--</td>
+                                                    <td>David Smith</td>
+                                                    <td>50 min</td>
+
+                                                    <td>
+                                                        <div
+                                                            class="badge badge-success"
+                                                        >
+                                                            New
+                                                        </div>
+                                                    </td>
+                                                    <td>
+                                                        <div
+                                                            class="btn-group"
+                                                            role="group"
+                                                            aria-label="Basic example"
+                                                        >
+                                                            <a href="#">
+                                                                <button
+                                                                    type="button"
+                                                                    class="btn btn-inverse-dark btn-icon mx-2"
+                                                                    title="Edit"
+                                                                    data-toggle="modal"
+                                                                    data-target="#statusModal"
+                                                                >
+                                                                    <i
+                                                                        class="mdi mdi-table-edit"
+                                                                    ></i>
+                                                                </button>
+                                                            </a>
+                                                            <a href="#">
+                                                                <button
+                                                                    type="button"
+                                                                    class="btn btn-inverse-danger btn-icon mx-2"
+                                                                    title="Delete"
+                                                                    data-toggle="modal"
+                                                                    data-target="#exampleModal"
+                                                                >
+                                                                    <i
+                                                                        class="mdi mdi-trash-can"
+                                                                    ></i>
+                                                                </button>
+                                                            </a>
+                                                        </div>
+                                                    </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+
+                                        <div class="row mt-5 text-center">
+                                            <div class="col-lg-12">
+                                                <div
+                                                    class="btn-group"
+                                                    role="group"
+                                                    aria-label="Basic example"
+                                                >
+                                                    <button
+                                                        type="button"
+                                                        class="btn btn-outline-secondary"
+                                                    >
+                                                        1
+                                                    </button>
+                                                    <button
+                                                        type="button"
+                                                        class="btn btn-outline-secondary"
+                                                    >
+                                                        2
+                                                    </button>
+                                                    <button
+                                                        type="button"
+                                                        class="btn btn-outline-secondary"
+                                                    >
+                                                        3
+                                                    </button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                  </div>
+                    <!-- content-wrapper ends -->
+
+                    <!-- partial:../../partials/_footer.html -->
+                    <footer class="footer">
+                        <div class="footer-inner-wraper">
+                            <div
+                                class="d-sm-flex justify-content-center justify-content-sm-between"
+                            >
+                                <span
+                                    class="text-muted d-block text-center text-sm-left d-sm-inline-block"
+                                    >Copyright © Swadesh Properties 2024</span
+                                >
+                            </div>
+                        </div>
+                    </footer>
+                    <!-- partial -->
                 </div>
-              </div>
+                <!-- main-panel ends -->
             </div>
-          </div>
-          <!-- content-wrapper ends -->
+            <!-- page-body-wrapper ends -->
+        </div>
+        <!-- container-scroller -->
 
-          <!-- partial:../../partials/_footer.html -->
-          <footer class="footer">
-            <div class="footer-inner-wraper">
-              <div
-                class="d-sm-flex justify-content-center justify-content-sm-between"
-              >
-                <span
-                  class="text-muted d-block text-center text-sm-left d-sm-inline-block"
-                  >Copyright © Swadesh Properties 2024</span
-                >
-              </div>
+        <!-- delete modal start -->
+        <div
+            class="modal fade"
+            id="exampleModal"
+            tabindex="-1"
+            aria-labelledby="exampleModalLabel"
+            aria-hidden="true"
+        >
+            <div class="modal-dialog modal-dialog-centered modal-sm">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">
+                            Delete This Item
+                        </h5>
+                        <button
+                            type="button"
+                            class="close"
+                            data-dismiss="modal"
+                            aria-label="Close"
+                        >
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body p-5">
+                        <h5 class="text-black text-center">
+                            Are You Sure Delete This Item
+                        </h5>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-danger">
+                            Delete
+                        </button>
+                    </div>
+                </div>
             </div>
-          </footer>
-          <!-- partial -->
         </div>
-        <!-- main-panel ends -->
-      </div>
-      <!-- page-body-wrapper ends -->
-    </div>
-    <!-- container-scroller -->
+        <!-- delete modal end -->
 
-    <!-- delete modal start -->
-    <div
-      class="modal fade"
-      id="exampleModal"
-      tabindex="-1"
-      aria-labelledby="exampleModalLabel"
-      aria-hidden="true"
-    >
-      <div class="modal-dialog modal-dialog-centered modal-sm">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h5 class="modal-title" id="exampleModalLabel">Delete This Item</h5>
-            <button
-              type="button"
-              class="close"
-              data-dismiss="modal"
-              aria-label="Close"
-            >
-              <span aria-hidden="true">&times;</span>
-            </button>
-          </div>
-          <div class="modal-body p-5">
-            <h5 class="text-black text-center">
-              Are You Sure Delete This Item
-            </h5>
-          </div>
-          <div class="modal-footer">
-            <button type="button" class="btn btn-danger">Delete</button>
-          </div>
+        <!-- createModal modal start -->
+        <div
+            class="modal fade"
+            id="createModal"
+            tabindex="-1"
+            aria-labelledby="exampleModalLabel"
+            aria-hidden="true"
+        >
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">
+                            Add A New Task
+                        </h5>
+                        <button
+                            type="button"
+                            class="close"
+                            data-dismiss="modal"
+                            aria-label="Close"
+                        >
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <form action="">
+                            <div class="row">
+                                <div class="col-lg-12">
+                                    <div class="form-group">
+                                        <label for="">Project</label>
+                                        <select class="form-control" id="">
+                                            <option>Project 1</option>
+                                            <option>Project 2</option>
+                                            <option>Project 3</option>
+                                            <option>Project 4</option>
+                                            <option>Project 5</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="col-lg-12">
+                                    <div class="form-group">
+                                        <label for="">Title</label>
+                                        <input
+                                            type="text"
+                                            class="form-control"
+                                            id=""
+                                            placeholder="Enter Title"
+                                        />
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="form-group">
+                                        <label for="">Status </label>
+                                        <select class="form-control" id="">
+                                            <option>New</option>
+                                            <option>In Progress</option>
+                                            <option>Testing</option>
+                                            <option>Awaiting Feedback</option>
+                                            <option>Completed</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="form-group">
+                                        <label for="">Priority </label>
+                                        <select class="form-control" id="">
+                                            <option>Normal</option>
+                                            <option>Low</option>
+                                            <option>High</option>
+                                            <option>Urgent</option>
+                                        </select>
+                                    </div>
+                                </div>
+
+                                <div class="col-lg-6">
+                                    <div class="form-group">
+                                        <label for="">Assign Users</label>
+                                        <input
+                                            type="text"
+                                            class="form-control"
+                                            id=""
+                                            placeholder="Assign Users"
+                                        />
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="form-group">
+                                        <label for="">Assign Client </label>
+                                        <input
+                                            type="text"
+                                            class="form-control"
+                                            id=""
+                                            placeholder="Assign Client "
+                                        />
+                                    </div>
+                                </div>
+                                <div class="col-lg-12">
+                                    <div class="form-group">
+                                        <label for="">Description</label>
+                                        <textarea
+                                            name=""
+                                            id=""
+                                            cols="30"
+                                            rows="10"
+                                            class="form-control"
+                                        ></textarea>
+                                    </div>
+                                </div>
+
+                                <div class="col-lg-12">
+                                    <h4>More Information</h4>
+                                </div>
+
+                                <div class="col-lg-6">
+                                    <div class="form-group">
+                                        <label for="">Image Quality </label>
+                                        <select class="form-control" id="">
+                                            <option>Hight Quality</option>
+                                            <option>HD</option>
+                                            <option>Low</option>
+                                            <option>Mid Resolution</option>
+                                            <option>Low Resolution</option>
+                                        </select>
+                                    </div>
+                                </div>
+
+                                <div class="col-lg-6">
+                                    <div class="form-group">
+                                        <label for="">Target Device </label>
+                                        <select class="form-control" id="">
+                                            <option>Mobile</option>
+                                            <option>Tablet</option>
+                                            <option>Desktop</option>
+                                            <option>Television</option>
+                                            <option>All Devices</option>
+                                        </select>
+                                    </div>
+                                </div>
+
+                                <div class="col-lg-6">
+                                    <div class="form-group">
+                                        <label for="">Word Count</label>
+                                        <input
+                                            type="text"
+                                            class="form-control"
+                                            id=""
+                                            placeholder="Enter Word Count"
+                                        />
+                                    </div>
+                                </div>
+
+                                <div class="col-lg-6">
+                                    <div class="form-group">
+                                        <label for="">Image Count</label>
+                                        <input
+                                            type="text"
+                                            class="form-control"
+                                            id=""
+                                            placeholder="Enter Image  Count"
+                                        />
+                                    </div>
+                                </div>
+
+                                <div class="col-lg-12">
+                                    <div class="form-group">
+                                        <label for="">Comments</label>
+                                        <textarea
+                                            name=""
+                                            id=""
+                                            cols="30"
+                                            rows="10"
+                                            class="form-control"
+                                        ></textarea>
+                                    </div>
+                                </div>
+
+                                <div class="col-lg-12">
+                                    <h4>Options</h4>
+                                </div>
+
+                                <div class="col-lg-6">
+                                    <div class="form-group">
+                                        <label for="">Target Date</label>
+                                        <input
+                                            type="date"
+                                            class="form-control"
+                                            id=""
+                                            placeholder=""
+                                        />
+                                    </div>
+                                </div>
+
+                                <div class="col-lg-6">
+                                    <div class="form-group">
+                                        <label for="">Tags</label>
+                                        <input
+                                            type="text"
+                                            class="form-control"
+                                            id=""
+                                            placeholder=" Enter Tags"
+                                        />
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-success">
+                            Save
+                        </button>
+                    </div>
+                </div>
+            </div>
         </div>
-      </div>
-    </div>
-    <!-- delete modal end -->
+        <!-- createModal modal end -->
 
-    <!-- createModal modal start -->
-    <div
-      class="modal fade"
-      id="createModal"
-      tabindex="-1"
-      aria-labelledby="exampleModalLabel"
-      aria-hidden="true"
-    >
-      <div class="modal-dialog modal-dialog-centered">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h5 class="modal-title" id="exampleModalLabel">Add A New Task</h5>
-            <button
-              type="button"
-              class="close"
-              data-dismiss="modal"
-              aria-label="Close"
-            >
-              <span aria-hidden="true">&times;</span>
-            </button>
-          </div>
-          <div class="modal-body">
-            <form action="">
-              <div class="row">
-                <div class="col-lg-12">
-                  <div class="form-group">
-                    <label for="">Project</label>
-                    <select class="form-control" id="">
-                      <option>Project 1</option>
-                      <option>Project 2</option>
-                      <option>Project 3</option>
-                      <option>Project 4</option>
-                      <option>Project 5</option>
-                    </select>
-                  </div>
-                </div>
-                <div class="col-lg-12">
-                  <div class="form-group">
-                    <label for="">Title</label>
-                    <input
-                      type="text"
-                      class="form-control"
-                      id=""
-                      placeholder="Enter Title"
-                    />
-                  </div>
-                </div>
-                <div class="col-lg-6">
-                  <div class="form-group">
-                    <label for="">Status </label>
-                    <select class="form-control" id="">
-                      <option>New</option>
-                      <option>In Progress</option>
-                      <option>Testing</option>
-                      <option>Awaiting Feedback</option>
-                      <option>Completed</option>
-                    </select>
-                  </div>
-                </div>
-                <div class="col-lg-6">
-                  <div class="form-group">
-                    <label for="">Priority </label>
-                    <select class="form-control" id="">
-                      <option>Normal</option>
-                      <option>Low</option>
-                      <option>High</option>
-                      <option>Urgent</option>
-                    </select>
-                  </div>
-                </div>
+        <!-- status modal start -->
+        <div
+            class="modal fade"
+            id="statusModal"
+            tabindex="-1"
+            aria-labelledby="exampleModalLabel"
+            aria-hidden="true"
+        >
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">
+                            Edit Task
+                        </h5>
+                        <button
+                            type="button"
+                            class="close"
+                            data-dismiss="modal"
+                            aria-label="Close"
+                        >
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <form action="">
+                            <div class="row">
+                                <div class="col-lg-12">
+                                    <div class="form-group">
+                                        <label for="">Project</label>
+                                        <select class="form-control" id="">
+                                            <option>Project 1</option>
+                                            <option>Project 2</option>
+                                            <option>Project 3</option>
+                                            <option>Project 4</option>
+                                            <option>Project 5</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="col-lg-12">
+                                    <div class="form-group">
+                                        <label for="">Title</label>
+                                        <input
+                                            type="text"
+                                            class="form-control"
+                                            id=""
+                                            placeholder="Enter Title"
+                                        />
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="form-group">
+                                        <label for="">Status </label>
+                                        <select class="form-control" id="">
+                                            <option>New</option>
+                                            <option>In Progress</option>
+                                            <option>Testing</option>
+                                            <option>Awaiting Feedback</option>
+                                            <option>Completed</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="form-group">
+                                        <label for="">Priority </label>
+                                        <select class="form-control" id="">
+                                            <option>Normal</option>
+                                            <option>Low</option>
+                                            <option>High</option>
+                                            <option>Urgent</option>
+                                        </select>
+                                    </div>
+                                </div>
 
-                <div class="col-lg-6">
-                  <div class="form-group">
-                    <label for="">Assign Users</label>
-                    <input
-                      type="text"
-                      class="form-control"
-                      id=""
-                      placeholder="Assign Users"
-                    />
-                  </div>
-                </div>
-                <div class="col-lg-6">
-                  <div class="form-group">
-                    <label for="">Assign Client </label>
-                    <input
-                      type="text"
-                      class="form-control"
-                      id=""
-                      placeholder="Assign Client "
-                    />
-                  </div>
-                </div>
-                <div class="col-lg-12">
-                  <div class="form-group">
-                    <label for="">Description</label>
-                    <textarea
-                      name=""
-                      id=""
-                      cols="30"
-                      rows="10"
-                      class="form-control"
-                    ></textarea>
-                  </div>
-                </div>
+                                <div class="col-lg-6">
+                                    <div class="form-group">
+                                        <label for="">Assign Users</label>
+                                        <input
+                                            type="text"
+                                            class="form-control"
+                                            id=""
+                                            placeholder="Assign Users"
+                                        />
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="form-group">
+                                        <label for="">Assign Client </label>
+                                        <input
+                                            type="text"
+                                            class="form-control"
+                                            id=""
+                                            placeholder="Assign Client "
+                                        />
+                                    </div>
+                                </div>
+                                <div class="col-lg-12">
+                                    <div class="form-group">
+                                        <label for="">Description</label>
+                                        <textarea
+                                            name=""
+                                            id=""
+                                            cols="30"
+                                            rows="10"
+                                            class="form-control"
+                                        ></textarea>
+                                    </div>
+                                </div>
 
-                <div class="col-lg-12">
-                  <h4>More Information</h4>
-                </div>
+                                <div class="col-lg-12">
+                                    <h4>More Information</h4>
+                                </div>
 
-                <div class="col-lg-6">
-                  <div class="form-group">
-                    <label for="">Image Quality </label>
-                    <select class="form-control" id="">
-                      <option>Hight Quality</option>
-                      <option>HD</option>
-                      <option>Low</option>
-                      <option>Mid Resolution</option>
-                      <option>Low Resolution</option>
-                    </select>
-                  </div>
-                </div>
+                                <div class="col-lg-6">
+                                    <div class="form-group">
+                                        <label for="">Image Quality </label>
+                                        <select class="form-control" id="">
+                                            <option>Hight Quality</option>
+                                            <option>HD</option>
+                                            <option>Low</option>
+                                            <option>Mid Resolution</option>
+                                            <option>Low Resolution</option>
+                                        </select>
+                                    </div>
+                                </div>
 
-                <div class="col-lg-6">
-                  <div class="form-group">
-                    <label for="">Target Device </label>
-                    <select class="form-control" id="">
-                      <option>Mobile</option>
-                      <option>Tablet</option>
-                      <option>Desktop</option>
-                      <option>Television</option>
-                      <option>All Devices</option>
-                    </select>
-                  </div>
-                </div>
+                                <div class="col-lg-6">
+                                    <div class="form-group">
+                                        <label for="">Target Device </label>
+                                        <select class="form-control" id="">
+                                            <option>Mobile</option>
+                                            <option>Tablet</option>
+                                            <option>Desktop</option>
+                                            <option>Television</option>
+                                            <option>All Devices</option>
+                                        </select>
+                                    </div>
+                                </div>
 
-                <div class="col-lg-6">
-                  <div class="form-group">
-                    <label for="">Word Count</label>
-                    <input
-                      type="text"
-                      class="form-control"
-                      id=""
-                      placeholder="Enter Word Count"
-                    />
-                  </div>
-                </div>
+                                <div class="col-lg-6">
+                                    <div class="form-group">
+                                        <label for="">Word Count</label>
+                                        <input
+                                            type="text"
+                                            class="form-control"
+                                            id=""
+                                            placeholder="Enter Word Count"
+                                        />
+                                    </div>
+                                </div>
 
-                <div class="col-lg-6">
-                  <div class="form-group">
-                    <label for="">Image Count</label>
-                    <input
-                      type="text"
-                      class="form-control"
-                      id=""
-                      placeholder="Enter Image  Count"
-                    />
-                  </div>
-                </div>
+                                <div class="col-lg-6">
+                                    <div class="form-group">
+                                        <label for="">Image Count</label>
+                                        <input
+                                            type="text"
+                                            class="form-control"
+                                            id=""
+                                            placeholder="Enter Image  Count"
+                                        />
+                                    </div>
+                                </div>
 
-                <div class="col-lg-12">
-                  <div class="form-group">
-                    <label for="">Comments</label>
-                    <textarea
-                      name=""
-                      id=""
-                      cols="30"
-                      rows="10"
-                      class="form-control"
-                    ></textarea>
-                  </div>
-                </div>
+                                <div class="col-lg-12">
+                                    <div class="form-group">
+                                        <label for="">Comments</label>
+                                        <textarea
+                                            name=""
+                                            id=""
+                                            cols="30"
+                                            rows="10"
+                                            class="form-control"
+                                        ></textarea>
+                                    </div>
+                                </div>
 
-                <div class="col-lg-12">
-                  <h4>Options</h4>
-                </div>
+                                <div class="col-lg-12">
+                                    <h4>Options</h4>
+                                </div>
 
-                <div class="col-lg-6">
-                  <div class="form-group">
-                    <label for="">Target Date</label>
-                    <input
-                      type="date"
-                      class="form-control"
-                      id=""
-                      placeholder=""
-                    />
-                  </div>
-                </div>
+                                <div class="col-lg-6">
+                                    <div class="form-group">
+                                        <label for="">Target Date</label>
+                                        <input
+                                            type="date"
+                                            class="form-control"
+                                            id=""
+                                            placeholder=""
+                                        />
+                                    </div>
+                                </div>
 
-                <div class="col-lg-6">
-                  <div class="form-group">
-                    <label for="">Tags</label>
-                    <input
-                      type="text"
-                      class="form-control"
-                      id=""
-                      placeholder=" Enter Tags"
-                    />
-                  </div>
+                                <div class="col-lg-6">
+                                    <div class="form-group">
+                                        <label for="">Tags</label>
+                                        <input
+                                            type="text"
+                                            class="form-control"
+                                            id=""
+                                            placeholder=" Enter Tags"
+                                        />
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-success">
+                            Save
+                        </button>
+                    </div>
                 </div>
-              </div>
-            </form>
-          </div>
-          <div class="modal-footer">
-            <button type="button" class="btn btn-success">Save</button>
-          </div>
+            </div>
         </div>
-      </div>
-    </div>
-    <!-- createModal modal end -->
+        <!-- status modal end -->
 
-    <!-- status modal start -->
-    <div
-      class="modal fade"
-      id="statusModal"
-      tabindex="-1"
-      aria-labelledby="exampleModalLabel"
-      aria-hidden="true"
-    >
-      <div class="modal-dialog modal-dialog-centered">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h5 class="modal-title" id="exampleModalLabel">Edit Task</h5>
-            <button
-              type="button"
-              class="close"
-              data-dismiss="modal"
-              aria-label="Close"
-            >
-              <span aria-hidden="true">&times;</span>
-            </button>
-          </div>
-          <div class="modal-body">
-            <form action="">
-              <div class="row">
-                <div class="col-lg-12">
-                  <div class="form-group">
-                    <label for="">Project</label>
-                    <select class="form-control" id="">
-                      <option>Project 1</option>
-                      <option>Project 2</option>
-                      <option>Project 3</option>
-                      <option>Project 4</option>
-                      <option>Project 5</option>
-                    </select>
-                  </div>
-                </div>
-                <div class="col-lg-12">
-                  <div class="form-group">
-                    <label for="">Title</label>
-                    <input
-                      type="text"
-                      class="form-control"
-                      id=""
-                      placeholder="Enter Title"
-                    />
-                  </div>
-                </div>
-                <div class="col-lg-6">
-                  <div class="form-group">
-                    <label for="">Status </label>
-                    <select class="form-control" id="">
-                      <option>New</option>
-                      <option>In Progress</option>
-                      <option>Testing</option>
-                      <option>Awaiting Feedback</option>
-                      <option>Completed</option>
-                    </select>
-                  </div>
-                </div>
-                <div class="col-lg-6">
-                  <div class="form-group">
-                    <label for="">Priority </label>
-                    <select class="form-control" id="">
-                      <option>Normal</option>
-                      <option>Low</option>
-                      <option>High</option>
-                      <option>Urgent</option>
-                    </select>
-                  </div>
-                </div>
+        <!-- plugins:js -->
+        <script src="assets/vendors/js/vendor.bundle.base.js"></script>
+        <!-- endinject -->
+        <!-- Plugin js for this page -->
+        <script src="assets/vendors/chart.js/Chart.min.js"></script>
+        <script src="assets/vendors/jquery-circle-progress/js/circle-progress.min.js"></script>
+        <!-- End plugin js for this page -->
+        <!-- inject:js -->
+        <script src="assets/js/off-canvas.js"></script>
+        <script src="assets/js/hoverable-collapse.js"></script>
+        <script src="assets/js/misc.js"></script>
+        <!-- endinject -->
+        <!-- Custom js for this page -->
+        <script src="assets/js/dashboard.js"></script>
+        <!-- End custom js for this page -->
 
-                <div class="col-lg-6">
-                  <div class="form-group">
-                    <label for="">Assign Users</label>
-                    <input
-                      type="text"
-                      class="form-control"
-                      id=""
-                      placeholder="Assign Users"
-                    />
-                  </div>
-                </div>
-                <div class="col-lg-6">
-                  <div class="form-group">
-                    <label for="">Assign Client </label>
-                    <input
-                      type="text"
-                      class="form-control"
-                      id=""
-                      placeholder="Assign Client "
-                    />
-                  </div>
-                </div>
-                <div class="col-lg-12">
-                  <div class="form-group">
-                    <label for="">Description</label>
-                    <textarea
-                      name=""
-                      id=""
-                      cols="30"
-                      rows="10"
-                      class="form-control"
-                    ></textarea>
-                  </div>
-                </div>
+        <script>
+            function formatDate(date) {
+                const options = {
+                    year: "numeric",
+                    month: "short",
+                    day: "numeric",
+                };
+                return new Intl.DateTimeFormat("en-US", options).format(date);
+            }
 
-                <div class="col-lg-12">
-                  <h4>More Information</h4>
-                </div>
+            const today = new Date();
+            const startDate = formatDate(today);
+            const endDate = formatDate(today);
 
-                <div class="col-lg-6">
-                  <div class="form-group">
-                    <label for="">Image Quality </label>
-                    <select class="form-control" id="">
-                      <option>Hight Quality</option>
-                      <option>HD</option>
-                      <option>Low</option>
-                      <option>Mid Resolution</option>
-                      <option>Low Resolution</option>
-                    </select>
-                  </div>
-                </div>
-
-                <div class="col-lg-6">
-                  <div class="form-group">
-                    <label for="">Target Device </label>
-                    <select class="form-control" id="">
-                      <option>Mobile</option>
-                      <option>Tablet</option>
-                      <option>Desktop</option>
-                      <option>Television</option>
-                      <option>All Devices</option>
-                    </select>
-                  </div>
-                </div>
-
-                <div class="col-lg-6">
-                  <div class="form-group">
-                    <label for="">Word Count</label>
-                    <input
-                      type="text"
-                      class="form-control"
-                      id=""
-                      placeholder="Enter Word Count"
-                    />
-                  </div>
-                </div>
-
-                <div class="col-lg-6">
-                  <div class="form-group">
-                    <label for="">Image Count</label>
-                    <input
-                      type="text"
-                      class="form-control"
-                      id=""
-                      placeholder="Enter Image  Count"
-                    />
-                  </div>
-                </div>
-
-                <div class="col-lg-12">
-                  <div class="form-group">
-                    <label for="">Comments</label>
-                    <textarea
-                      name=""
-                      id=""
-                      cols="30"
-                      rows="10"
-                      class="form-control"
-                    ></textarea>
-                  </div>
-                </div>
-
-                <div class="col-lg-12">
-                  <h4>Options</h4>
-                </div>
-
-                <div class="col-lg-6">
-                  <div class="form-group">
-                    <label for="">Target Date</label>
-                    <input
-                      type="date"
-                      class="form-control"
-                      id=""
-                      placeholder=""
-                    />
-                  </div>
-                </div>
-
-                <div class="col-lg-6">
-                  <div class="form-group">
-                    <label for="">Tags</label>
-                    <input
-                      type="text"
-                      class="form-control"
-                      id=""
-                      placeholder=" Enter Tags"
-                    />
-                  </div>
-                </div>
-              </div>
-            </form>
-          </div>
-          <div class="modal-footer">
-            <button type="button" class="btn btn-success">Save</button>
-          </div>
-        </div>
-      </div>
-    </div>
-    <!-- status modal end -->
-
-    <!-- plugins:js -->
-    <script src="assets/vendors/js/vendor.bundle.base.js"></script>
-    <!-- endinject -->
-    <!-- Plugin js for this page -->
-    <script src="assets/vendors/chart.js/Chart.min.js"></script>
-    <script src="assets/vendors/jquery-circle-progress/js/circle-progress.min.js"></script>
-    <!-- End plugin js for this page -->
-    <!-- inject:js -->
-    <script src="assets/js/off-canvas.js"></script>
-    <script src="assets/js/hoverable-collapse.js"></script>
-    <script src="assets/js/misc.js"></script>
-    <!-- endinject -->
-    <!-- Custom js for this page -->
-    <script src="assets/js/dashboard.js"></script>
-    <!-- End custom js for this page -->
-
-    <script>
-      function formatDate(date) {
-        const options = { year: "numeric", month: "short", day: "numeric" };
-        return new Intl.DateTimeFormat("en-US", options).format(date);
-      }
-
-      const today = new Date();
-      const startDate = formatDate(today);
-      const endDate = formatDate(today);
-
-      document.getElementById(
-        "date-range"
-      ).textContent = `${startDate} - ${endDate}`;
-    </script>
-  </body>
+            document.getElementById(
+                "date-range"
+            ).textContent = `${startDate} - ${endDate}`;
+        </script>
+    </body>
 </html>

@@ -3,6 +3,7 @@
 use App\Http\Controllers\CrmController;
 use App\Http\Controllers\ProfileController;
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\LeadController;
 
 // Route::get('/', function () {
 //     return view('dashboard');
@@ -13,6 +14,13 @@ use Illuminate\Support\Facades\Route;
 // })->middleware(['auth', 'verified'])->name('dashboard');
 
 Route::get('/', [CrmController::class, 'dashboard']);
+
+
+
+
+Route::resource('/leads', LeadController::class);
+
+
 Route::middleware('auth')->group(function () {
     Route::get('/profile', [ProfileController::class, 'edit'])->name('profile.edit');
     Route::patch('/profile', [ProfileController::class, 'update'])->name('profile.update');

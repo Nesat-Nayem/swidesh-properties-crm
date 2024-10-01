@@ -1,50 +1,46 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <title>Swadesh Properties</title>
-    <!-- plugins:css -->
-    <link rel="stylesheet" href="crm/assets/vendors/flag-icon-css/css/flag-icon.min.css">
-    <link rel="stylesheet" href="crm/assets/vendors/mdi/css/materialdesignicons.min.css">
-    <link rel="stylesheet" href="crm/assets/vendors/css/vendor.bundle.base.css">
-    <!-- endinject -->
-    <!-- Plugin css for this page -->
-    <link rel="stylesheet" href="crm/assets/vendors/font-awesome/css/font-awesome.min.css" />
-    <link rel="stylesheet" href="crm/assets/vendors/bootstrap-datepicker/bootstrap-datepicker.min.css">
-    <!-- End plugin css for this page -->
-    <!-- inject:css -->
-    <!-- endinject -->
-    <!-- Layout styles -->
-    <link rel="stylesheet" href="crm/assets/css/style.css">
-    <!-- End layout styles -->
-    <link rel="shortcut icon" href="crm/assets/images/logo.png" />
-  </head>
 
-  <div>
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>Swadesh Properties</title>
+  <!-- plugins:css -->
+  <link rel="stylesheet" href="{{ asset('crm/assets/vendors/flag-icon-css/css/flag-icon.min.css') }}">
+  <link rel="stylesheet" href="{{ asset('crm/assets/vendors/mdi/css/materialdesignicons.min.css') }}">
+  <link rel="stylesheet" href="{{ asset('crm/assets/vendors/css/vendor.bundle.base.css') }}">
+  <!-- endinject -->
+  <!-- Plugin css for this page -->
+  <link rel="stylesheet" href="{{ asset('crm/assets/vendors/font-awesome/css/font-awesome.min.css') }}" />
+  <link rel="stylesheet" href="{{ asset('crm/assets/vendors/bootstrap-datepicker/bootstrap-datepicker.min.css') }}">
+  <!-- End plugin css for this page -->
+  <!-- inject:css -->
+  <!-- endinject -->
+  <!-- Layout styles -->
+  <link rel="stylesheet" href="{{ asset('crm/assets/css/style.css') }}">
+  <!-- End layout styles -->
+  <link rel="shortcut icon" href="{{ asset('crm/assets/images/logo.png') }}" />
+</head>
+
+
+<div>
+
   <body>
     <div class="container-scroller">
       <!-- partial:partials/_navbar.html -->
       <nav
-        class="navbar default-layout-navbar col-lg-12 col-12 p-0 fixed-top d-flex flex-row"
-      >
+        class="navbar default-layout-navbar col-lg-12 col-12 p-0 fixed-top d-flex flex-row">
         <div
-          class="text-center navbar-brand-wrapper d-flex align-items-center justify-content-center"
-        >
-          <a class="navbar-brand brand-logo bg-white" href="index.html"
-            ><img src="crm/assets/images/logo.png" alt="logo"
-          /></a>
-          <a class="navbar-brand brand-logo-mini" href="index.html"
-            ><img src="crm/assets/images/logo.png" alt="logo"
-          /></a>
+          class="text-center navbar-brand-wrapper d-flex align-items-center justify-content-center">
+          <a class="navbar-brand brand-logo bg-white" href="index.html"><img src="crm/assets/images/logo.png" alt="logo" /></a>
+          <a class="navbar-brand brand-logo-mini" href="index.html"><img src="crm/assets/images/logo.png" alt="logo" /></a>
         </div>
         <div class="navbar-menu-wrapper d-flex align-items-stretch">
           <button
             class="navbar-toggler navbar-toggler align-self-center"
             type="button"
-            data-toggle="minimize"
-          >
+            data-toggle="minimize">
             <span class="mdi mdi-menu"></span>
           </button>
           <div class="search-field d-none d-xl-block">
@@ -56,8 +52,7 @@
                 <input
                   type="text"
                   class="form-control bg-transparent border-0"
-                  placeholder="Search..."
-                />
+                  placeholder="Search..." />
               </div>
             </form>
           </div>
@@ -68,14 +63,12 @@
                 id="reportDropdown"
                 href="#"
                 data-toggle="dropdown"
-                aria-expanded="false"
-              >
+                aria-expanded="false">
                 Reports
               </a>
               <div
                 class="dropdown-menu navbar-dropdown"
-                aria-labelledby="reportDropdown"
-              >
+                aria-labelledby="reportDropdown">
                 <a class="dropdown-item" href="#">
                   <i class="mdi mdi-file-pdf mr-2"></i>PDF
                 </a>
@@ -95,14 +88,12 @@
                 id="projectDropdown"
                 href="#"
                 data-toggle="dropdown"
-                aria-expanded="false"
-              >
+                aria-expanded="false">
                 Add
               </a>
               <div
                 class="dropdown-menu navbar-dropdown"
-                aria-labelledby="projectDropdown"
-              >
+                aria-labelledby="projectDropdown">
                 <div class="dropdown-divider"></div>
                 <a class="dropdown-item" href="contact.html">
                   <i class="mdi mdi-airplay mr-2"></i>Contact
@@ -146,50 +137,44 @@
                 id="profileDropdown"
                 href="#"
                 data-toggle="dropdown"
-                aria-expanded="false"
-              >
+                aria-expanded="false">
                 <div class="nav-profile-img">
                   <img src="crm/assets/images/faces/face1.jpg" alt="image" />
                 </div>
                 <div class="nav-profile-text">
-                  <p class="mb-1 text-black">Suraj Jamdade</p>
+                  <p class="mb-1 text-black">David Smith</p>
                 </div>
               </a>
               <div
                 class="dropdown-menu navbar-dropdown dropdown-menu-right p-0 border-0 font-size-sm"
                 aria-labelledby="profileDropdown"
-                data-x-placement="bottom-end"
-              >
+                data-x-placement="bottom-end">
                 <div class="p-3 text-center" style="background: #030336">
                   <img
                     class="img-avatar img-avatar48 img-avatar-thumb"
                     src="crm/assets/images/faces/face1.jpg"
-                    alt=""
-                  />
+                    alt="" />
                 </div>
                 <div class="p-2">
                   <h5 class="dropdown-header text-uppercase pl-2 text-dark">
-                    Suraj Jamdade
+                    David Smith
                   </h5>
 
                   <a
                     class="dropdown-item py-1 d-flex align-items-center justify-content-between"
-                    href="profile.html"
-                  >
+                    href="profile.html">
                     <span>Profile</span>
                     <i class="mdi mdi-settings"></i>
                   </a>
                   <div role="separator" class="dropdown-divider"></div>
                   <h5
-                    class="dropdown-header text-uppercase pl-2 text-dark mt-2"
-                  >
+                    class="dropdown-header text-uppercase pl-2 text-dark mt-2">
                     Actions
                   </h5>
 
                   <a
                     class="dropdown-item py-1 d-flex align-items-center justify-content-between"
-                    href="index.html"
-                  >
+                    href="index.html">
                     <span>Log Out</span>
                     <i class="mdi mdi-logout ml-1"></i>
                   </a>
@@ -203,19 +188,16 @@
                 id="messageDropdown"
                 href="#"
                 data-toggle="dropdown"
-                aria-expanded="false"
-              >
+                aria-expanded="false">
                 <i class="mdi mdi-email-outline"></i>
                 <span class="count-symbol bg-success"></span>
               </a>
               <div
                 class="dropdown-menu dropdown-menu-right navbar-dropdown preview-list"
-                aria-labelledby="messageDropdown"
-              >
+                aria-labelledby="messageDropdown">
                 <h6
                   class="p-3 mb-0 text-white py-4"
-                  style="background: #030336"
-                >
+                  style="background: #030336">
                   Messages
                 </h6>
                 <div class="dropdown-divider"></div>
@@ -224,15 +206,12 @@
                     <img
                       src="crm/assets/images/faces/face4.jpg"
                       alt="image"
-                      class="profile-pic"
-                    />
+                      class="profile-pic" />
                   </div>
                   <div
-                    class="preview-item-content d-flex align-items-start flex-column justify-content-center"
-                  >
+                    class="preview-item-content d-flex align-items-start flex-column justify-content-center">
                     <h6
-                      class="preview-subject ellipsis mb-1 font-weight-normal"
-                    >
+                      class="preview-subject ellipsis mb-1 font-weight-normal">
                       Mark send you a message
                     </h6>
                     <p class="text-gray mb-0">1 Minutes ago</p>
@@ -244,15 +223,12 @@
                     <img
                       src="crm/assets/images/faces/face2.jpg"
                       alt="image"
-                      class="profile-pic"
-                    />
+                      class="profile-pic" />
                   </div>
                   <div
-                    class="preview-item-content d-flex align-items-start flex-column justify-content-center"
-                  >
+                    class="preview-item-content d-flex align-items-start flex-column justify-content-center">
                     <h6
-                      class="preview-subject ellipsis mb-1 font-weight-normal"
-                    >
+                      class="preview-subject ellipsis mb-1 font-weight-normal">
                       Cregh send you a message
                     </h6>
                     <p class="text-gray mb-0">15 Minutes ago</p>
@@ -264,15 +240,12 @@
                     <img
                       src="crm/assets/images/faces/face3.jpg"
                       alt="image"
-                      class="profile-pic"
-                    />
+                      class="profile-pic" />
                   </div>
                   <div
-                    class="preview-item-content d-flex align-items-start flex-column justify-content-center"
-                  >
+                    class="preview-item-content d-flex align-items-start flex-column justify-content-center">
                     <h6
-                      class="preview-subject ellipsis mb-1 font-weight-normal"
-                    >
+                      class="preview-subject ellipsis mb-1 font-weight-normal">
                       Profile picture updated
                     </h6>
                     <p class="text-gray mb-0">18 Minutes ago</p>
@@ -288,19 +261,16 @@
                 class="nav-link count-indicator dropdown-toggle"
                 id="notificationDropdown"
                 href="#"
-                data-toggle="dropdown"
-              >
+                data-toggle="dropdown">
                 <i class="mdi mdi-bell-outline"></i>
                 <span class="count-symbol bg-danger"></span>
               </a>
               <div
                 class="dropdown-menu dropdown-menu-right navbar-dropdown preview-list"
-                aria-labelledby="notificationDropdown"
-              >
+                aria-labelledby="notificationDropdown">
                 <h6
                   class="p-3 mb-0 text-white py-4"
-                  style="background: #030336"
-                >
+                  style="background: #030336">
                   Notifications
                 </h6>
                 <div class="dropdown-divider"></div>
@@ -311,8 +281,7 @@
                     </div>
                   </div>
                   <div
-                    class="preview-item-content d-flex align-items-start flex-column justify-content-center"
-                  >
+                    class="preview-item-content d-flex align-items-start flex-column justify-content-center">
                     <h6 class="preview-subject font-weight-normal mb-1">
                       Event today
                     </h6>
@@ -329,8 +298,7 @@
                     </div>
                   </div>
                   <div
-                    class="preview-item-content d-flex align-items-start flex-column justify-content-center"
-                  >
+                    class="preview-item-content d-flex align-items-start flex-column justify-content-center">
                     <h6 class="preview-subject font-weight-normal mb-1">
                       Settings
                     </h6>
@@ -345,8 +313,7 @@
                     </div>
                   </div>
                   <div
-                    class="preview-item-content d-flex align-items-start flex-column justify-content-center"
-                  >
+                    class="preview-item-content d-flex align-items-start flex-column justify-content-center">
                     <h6 class="preview-subject font-weight-normal mb-1">
                       Launch Admin
                     </h6>
@@ -361,8 +328,7 @@
           <button
             class="navbar-toggler navbar-toggler-right d-lg-none align-self-center"
             type="button"
-            data-toggle="offcanvas"
-          >
+            data-toggle="offcanvas">
             <span class="mdi mdi-menu"></span>
           </button>
         </div>
