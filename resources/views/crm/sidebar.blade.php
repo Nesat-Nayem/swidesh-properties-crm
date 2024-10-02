@@ -60,7 +60,7 @@
           </li>
 
           <li class="nav-item">
-            <a class="nav-link" href="payment-receipts.html">Payment Receipts</a>
+            <a class="nav-link" href="/payments">Payment Receipts</a>
           </li>
         </ul>
       </div>

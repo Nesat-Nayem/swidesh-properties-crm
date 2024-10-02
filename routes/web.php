@@ -9,6 +9,8 @@ use App\Http\Controllers\TaskController;
 use App\Http\Controllers\TeamController;
 use App\Http\Controllers\ProductController;
 use App\Http\Controllers\ExpenseController;
+use App\Http\Controllers\PaymentController;
+
 
 
 
@@ -33,6 +35,8 @@ Route::resource('/tasks', TaskController::class);
 Route::resource('/teams', TeamController::class);
 Route::resource('/products', ProductController::class);
 Route::resource('/expenses', ExpenseController::class);
+Route::resource('/payments', PaymentController::class);
+
 
 
 
