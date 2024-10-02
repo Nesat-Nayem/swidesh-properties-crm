@@ -89,7 +89,8 @@
           </li>
 
           <li class="nav-item">
-            <a class="nav-link" href="task.html">Tasks</a>
+            <!-- <a class="nav-link" href="task.html">Tasks</a> -->
+            <a class="nav-link" href="/tasks">Tasks</a>
           </li>
         </ul>
       </div>

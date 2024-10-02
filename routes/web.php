@@ -5,6 +5,8 @@ use App\Http\Controllers\ProfileController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\LeadController;
 use App\Http\Controllers\ContactController;
+use App\Http\Controllers\TaskController;
+
 
 // Route::get('/', function () {
 //     return view('dashboard');
@@ -21,6 +23,8 @@ Route::get('/dashboard2', function () {
 Route::resource('/contacts', ContactController::class);
 
 Route::resource('/leads', LeadController::class);
+Route::resource('/tasks', TaskController::class);
+
 
 
 Route::middleware('auth')->group(function () {
