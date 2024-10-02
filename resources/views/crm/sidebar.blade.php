@@ -129,7 +129,7 @@
       <div class="collapse" id="Team">
         <ul class="nav flex-column sub-menu">
           <li class="nav-item">
-            <a class="nav-link" href="team-list.html">Team List</a>
+            <a class="nav-link" href="/teams">Team List</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="time-sheet.html">Time Sheet</a>
