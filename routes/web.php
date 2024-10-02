@@ -7,6 +7,8 @@ use App\Http\Controllers\LeadController;
 use App\Http\Controllers\ContactController;
 use App\Http\Controllers\TaskController;
 use App\Http\Controllers\TeamController;
+use App\Http\Controllers\ProductController;
+
 
 
 
@@ -27,6 +29,8 @@ Route::resource('/contacts', ContactController::class);
 Route::resource('/leads', LeadController::class);
 Route::resource('/tasks', TaskController::class);
 Route::resource('/teams', TeamController::class);
+Route::resource('/products', ProductController::class);
+
 
 
 
