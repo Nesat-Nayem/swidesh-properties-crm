@@ -30,9 +30,9 @@
             </a>
           </li>
 
-          <li class="nav-item">
+          <!-- <li class="nav-item">
             <a class="nav-link" href="opportunity.html">Builder Opportunities</a>
-          </li>
+          </li> -->
           <li class="nav-item">
             <a class="nav-link" href="contacts">Contacts</a>
           </li>
@@ -78,7 +78,7 @@
       </a>
       <div class="collapse" id="Activities">
         <ul class="nav flex-column sub-menu">
-          <li class="nav-item">
+          <!-- <li class="nav-item">
             <a class="nav-link" href="call.html">Calls</a>
           </li>
           <li class="nav-item">
@@ -86,7 +86,7 @@
           </li>
           <li class="nav-item">
             <a class="nav-link" href="meeting.html">Follow Up</a>
-          </li>
+          </li> -->
 
           <li class="nav-item">
             <!-- <a class="nav-link" href="task.html">Tasks</a> -->
@@ -96,7 +96,7 @@
       </div>
     </li>
 
-    <li class="nav-item">
+    <!-- <li class="nav-item">
       <a
         class="nav-link"
         data-toggle="collapse"
@@ -114,7 +114,7 @@
           </li>
         </ul>
       </div>
-    </li>
+    </li> -->
     <li class="nav-item">
       <a
         class="nav-link"
@@ -131,9 +131,9 @@
           <li class="nav-item">
             <a class="nav-link" href="/teams">Team List</a>
           </li>
-          <li class="nav-item">
+          <!-- <li class="nav-item">
             <a class="nav-link" href="time-sheet.html">Time Sheet</a>
-          </li>
+          </li> -->
         </ul>
       </div>
     </li>
@@ -145,7 +145,7 @@
       </a>
     </li>
 
-    <li class="nav-item">
+    <!-- <li class="nav-item">
       <a
         class="nav-link"
         data-toggle="collapse"
@@ -169,9 +169,9 @@
           </li>
         </ul>
       </div>
-    </li>
+    </li> -->
 
-    <li class="nav-item sidebar-user-actions mt-5">
+    <!-- <li class="nav-item sidebar-user-actions mt-5">
       <div class="user-details">
         <div class="d-flex justify-content-between align-items-center">
           <div>
@@ -190,14 +190,14 @@
           <div class="badge badge-danger">Admin</div>
         </div>
       </div>
-    </li>
-    <li class="nav-item sidebar-user-actions">
+    </li> -->
+    <!-- <li class="nav-item sidebar-user-actions">
       <div class="sidebar-user-menu">
         <a href="profile.html" class="nav-link"><i class="mdi mdi-settings menu-icon"></i>
           <span class="menu-title">Settings</span>
         </a>
       </div>
-    </li>
+    </li> -->
 
     <li class="nav-item sidebar-user-actions">
       <!-- <div class="sidebar-user-menu">

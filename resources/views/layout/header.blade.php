@@ -57,7 +57,7 @@
             </form>
           </div>
           <ul class="navbar-nav navbar-nav-right">
-            <li class="nav-item dropdown d-none d-md-block">
+            <!-- <li class="nav-item dropdown d-none d-md-block">
               <a
                 class="nav-link dropdown-toggle"
                 id="reportDropdown"
@@ -129,7 +129,7 @@
                 </a>
                 <div class="dropdown-divider"></div>
               </div>
-            </li>
+            </li> -->
 
             <li class="nav-item nav-profile dropdown">
               <a
