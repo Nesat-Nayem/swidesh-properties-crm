@@ -2,6 +2,7 @@
 
 use App\Http\Controllers\CrmController;
 use App\Http\Controllers\ProfileController;
+use App\Http\Controllers\ReportController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\LeadController;
 use App\Http\Controllers\ContactController;
@@ -36,6 +37,7 @@ Route::resource('/teams', TeamController::class);
 Route::resource('/products', ProductController::class);
 Route::resource('/expenses', ExpenseController::class);
 Route::resource('/payments', PaymentController::class);
+Route::resource('/report', ReportController::class);
 
 
 
