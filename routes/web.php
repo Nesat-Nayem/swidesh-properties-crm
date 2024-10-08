@@ -37,7 +37,15 @@ Route::resource('/teams', TeamController::class);
 Route::resource('/products', ProductController::class);
 Route::resource('/expenses', ExpenseController::class);
 Route::resource('/payments', PaymentController::class);
-Route::resource('/report', ReportController::class);
+
+Route::get('/report', [ReportController::class ,'repoart']);
+Route::get('/lead', [ReportController::class, 'lead']);
+Route::get('/contact', [ReportController::class, 'contact']);
+Route::get('/product', [ReportController::class, 'product']);
+Route::get('/expense', [ReportController::class, 'Expence']);
+Route::get('/payment', [ReportController::class, 'Payment']);
+Route::get('/task', [ReportController::class, 'Task']);
+Route::get('/team', [ReportController::class, 'team']);
 
 
 

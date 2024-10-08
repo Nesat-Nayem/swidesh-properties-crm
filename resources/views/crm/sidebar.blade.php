@@ -152,20 +152,32 @@
         href="#auth"
         aria-expanded="false"
         aria-controls="auth">
-        <span class="icon-bg"><i class="mdi mdi-lock menu-icon"></i></span>
-        <span class="menu-title">User Pages</span>
+        <span class="icon-bg"><i class="mdi mdi-format-list-bulleted menu-icon"></i></span>
+        <span class="menu-title">Report</span>
         <i class="menu-arrow"></i>
       </a>
       <div class="collapse" id="auth">
         <ul class="nav flex-column sub-menu">
           <li class="nav-item">
-            <a class="nav-link" href="profile.html"> Profile </a>
+            <a class="nav-link" href="profile.html"> Lead Report </a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="index.html"> Login </a>
+            <a class="nav-link" href="index.html"> Contract Report </a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="register.html"> Register </a>
+            <a class="nav-link" href="register.html"> Product Report </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="register.html"> Expences Report </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="register.html"> Payment Report </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="register.html"> Task Report </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="register.html"> Team Report </a>
           </li>
         </ul>
       </div>

@@ -23,39 +23,47 @@
             <div class="row">
                 <div class="col-lg-12 grid-margin stretch-card">
                     <div class="card">
-                        <ul class="nav nav-tabs" id="myTab" role="tablist">
+                        <!-- <ul class="nav nav-tabs" id="myTab" role="tablist">
                             <li class="nav-item dropdown">
                                 <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button"
-                                    aria-expanded="false">Projects</a>
+                                    aria-expanded="false">Customers</a>
                                 <div class="dropdown-menu">
-                                    <a class="dropdown-item" href="projects-overview.html">Overview</a>
-                                    <a class="dropdown-item" href="client-projects.html">Client Projects</a>
-                                    <a class="dropdown-item" href="projects-category.html">Project Category</a>
+                                    <a class="dropdown-item" href="projects-overview.html">Lead</a>
+                                    <a class="dropdown-item" href="client-projects.html">Contract</a>
                                 </div>
                             </li>
 
                             <li class="nav-item dropdown">
                                 <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button"
-                                    aria-expanded="false">Clients</a>
+                                    aria-expanded="false">Selse</a>
                                 <div class="dropdown-menu">
-                                    <a class="dropdown-item" href="clients-overview.html">Overview</a>
+                                    <a class="dropdown-item" href="clients-overview.html">Product</a>
+                                    <a class="dropdown-item" href="clients-overview.html">Expense</a>
+                                    <a class="dropdown-item" href="clients-overview.html">Payment</a>
                                 </div>
                             </li>
 
                             <li class="nav-item dropdown">
                                 <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button"
-                                    aria-expanded="false">Time Sheets</a>
+                                    aria-expanded="false">Activities</a>
                                 <div class="dropdown-menu">
-                                    <a class="dropdown-item" href="team-member.html">Team Member</a>
-                                    <a class="dropdown-item" href="time-sheet-client.html">Client</a>
-                                    <a class="dropdown-item" href="time-sheet-project.html">Project</a>
+                                    <a class="dropdown-item" href="team-member.html">Task</a>
                                 </div>
                             </li>
-                        </ul>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button"
+                                    aria-expanded="false">Team</a>
+                                <div class="dropdown-menu">
+                                    <a class="dropdown-item" href="team-member.html">Team</a>
+                                </div>
+                            </li>
+                        </ul> -->
+                        
+                        @include('layout.reportAppBar')
                         <div class="tab-content" id="myTabContent">
                             <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
                                 <div style="text-align: center">
-                                    <img src="assets/images/reports.svg" alt="img" class="img-fluids" style="
+                                    <img src="crm/assets/images/reports.svg" alt="img" class="img-fluids" style="
                                                         width: 400px;
                                                         height: 400px;
                                                     " />
@@ -89,9 +97,7 @@
         </footer>
         <!-- partial -->
     </div>
-    <!-- main-panel ends -->
 </div>
-<!-- page-body-wrapper ends -->
 </div>
 <!-- container-scroller -->
 
