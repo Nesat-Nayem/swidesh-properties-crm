@@ -10,7 +10,7 @@
                 <nav aria-label="breadcrumb">
                     <ol class="breadcrumb">
                         <li class="breadcrumb-item"><a href="{{ route('leads.index') }}">Leads</a></li>
-                        <li class="breadcrumb-item active" aria-current="page">Leads List</li>
+                        <li class="breadcrumb-item active" aria-current="page">Hot Leads</li>
                     </ol>
                 </nav>
             </div>
@@ -18,6 +18,8 @@
                 <div class="col-lg-12 grid-margin stretch-card">
                     <div class="card">
                         <div class="card-body">
+
+                        
                             <div class="d-flex justify-content-between mb-3">
                                 <div class="search-field" style="border: 1px solid #000">
                                     <form class="d-flex align-items-center h-100" action="#">

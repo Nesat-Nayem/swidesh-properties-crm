@@ -12,9 +12,21 @@ class LeadController extends Controller
     {
         // $leads = Lead::all();
         $leads = Lead::paginate(10); // or whatever number of items per page you want
-
+//  dd($leads);
         return view('crm.leads.index', compact('leads'));
     }
+
+    public function hotLeads()
+{
+    $leads = Lead::where('phone_type', 'Hot Call')->paginate(10);
+    return view('crm.leads.hot', compact('leads'));
+}
+    public function coldLeads()
+{
+    $leads = Lead::where('phone_type', 'Cold Call')->paginate(10);
+    return view('crm.leads.cold', compact('leads'));
+}
+
 
     public function create()
     {
@@ -107,7 +119,8 @@ class LeadController extends Controller
     public function destroy(Lead $lead)
     {
         $lead->delete();
-
         return redirect()->route('leads.index')->with('success', 'Lead deleted successfully.');
     }
+    
+
 }

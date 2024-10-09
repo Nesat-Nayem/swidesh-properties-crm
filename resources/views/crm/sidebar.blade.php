@@ -23,12 +23,7 @@
           <!-- <li class="nav-item">
                     <a class="nav-link" href="lead.html">Leads</a>
                   </li> -->
-          <li class="nav-item">
-            <a class="nav-link" href="{{ route('leads.index') }}">
-              <!-- <span class="icon-bg"><i class="mdi mdi-cube menu-icon"></i></span> -->
-              <span class="menu-title">Leads</span>
-            </a>
-          </li>
+   
 
           <!-- <li class="nav-item">
             <a class="nav-link" href="opportunity.html">Builder Opportunities</a>
@@ -36,6 +31,23 @@
           <li class="nav-item">
             <a class="nav-link" href="contacts">Contacts</a>
           </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="{{ route('leads.index') }}">
+         <span class="menu-title">Leads</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="{{ route('leads.cold') }}">
+         <span class="menu-title">Cold Leads</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="{{ route('leads.hot') }}">
+         <span class="menu-title">Hot Leads</span>
+            </a>
+          </li>
+
         </ul>
       </div>
     </li>
@@ -142,6 +154,12 @@
       <a class="nav-link" href="report">
         <span class="icon-bg"><i class="mdi mdi-format-list-bulleted menu-icon"></i></span>
         <span class="menu-title">Reports</span>
+      </a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="/">
+        <span class="icon-bg"><i class="mdi mdi-settings  menu-icon"></i></span>
+        <span class="menu-title">Inventory</span>
       </a>
     </li>
 

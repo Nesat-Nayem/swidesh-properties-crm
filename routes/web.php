@@ -32,6 +32,11 @@ Route::get('/dashboard2', function () {
 Route::resource('/contacts', ContactController::class);
 
 Route::resource('/leads', LeadController::class);
+Route::delete('leads/{lead}', [LeadController::class, 'destroy'])->name('leads.destroy');
+Route::get('/hot-leads', [LeadController::class, 'hotLeads'])->name('leads.hot');
+Route::get('/cold-leads', [LeadController::class, 'coldLeads'])->name('leads.cold');
+
+
 Route::resource('/tasks', TaskController::class);
 Route::resource('/teams', TeamController::class);
 Route::resource('/products', ProductController::class);

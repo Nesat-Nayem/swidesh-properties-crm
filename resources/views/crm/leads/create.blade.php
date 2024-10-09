@@ -1,6 +1,6 @@
 @include('layout.header')
 <div class="container-fluid page-body-wrapper">
-@include('crm.sidebar')
+    @include('crm.sidebar')
 
     <div class="main-panel">
         <div class="content-wrapper">
@@ -20,16 +20,16 @@
                         <div class="card-body">
                             <form class="forms-sample" action="{{ route('leads.store') }}" method="POST">
                                 @csrf
-                                        <!-- Display Validation Errors -->
-        @if ($errors->any())
-            <div class="alert alert-danger">
-                <ul>
-                    @foreach ($errors->all() as $error)
-                        <li>{{ $error }}</li>
-                    @endforeach
-                </ul>
-            </div>
-        @endif
+                                <!-- Display Validation Errors -->
+                                @if ($errors->any())
+                                    <div class="alert alert-danger">
+                                        <ul>
+                                            @foreach ($errors->all() as $error)
+                                                <li>{{ $error }}</li>
+                                            @endforeach
+                                        </ul>
+                                    </div>
+                                @endif
                                 @include('crm.leads.form')
                                 <button type="submit" class="btn btn-primary mr-2">Submit</button>
                                 <a href="{{ route('leads.index') }}" class="btn btn-light">Cancel</a>
