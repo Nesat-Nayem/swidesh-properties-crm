@@ -33,7 +33,7 @@
                                     <div class="col-lg-4 col-6">
                                         <div class="form-group">
                                             <label for="rate">Rate</label>
-                                            <input type="text" class="form-control" id="rate" name="rate" value="{{ $product->rate }}" required>
+                                            <input type="number" class="form-control" id="rate" name="rate" value="{{ $product->rate }}" required>
                                         </div>
                                     </div>
                                     <div class="col-lg-4 col-6">

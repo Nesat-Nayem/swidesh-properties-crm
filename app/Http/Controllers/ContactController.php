@@ -9,7 +9,7 @@ class ContactController extends Controller
 {
     public function index()
     {
-        $contacts = Contact::paginate(10); 
+        $contacts = Contact::paginate(10);
         return view('crm.contact.index', compact('contacts'));
     }
 
@@ -23,19 +23,21 @@ class ContactController extends Controller
         // Dump and die to inspect the incoming request data
         // dd($request->all());
 
-        $request->validate([
-            'title' => 'required',
-            'full_name' => 'required',
-            'account' => 'required',
-            'email' => 'required|email',
-        
-            'phone' => ['required', 'regex:/^[6-9]\d{9}$/'],
-            'postal_code' => ['required', 'regex:/^\d{6}$/'],
-        ], [
-            'telephone.regex' => 'The telephone number must be a valid 10-digit Indian phone number starting with 6, 7, 8, or 9.',
-            'postal_code.regex' => 'The zip code must be a valid 6-digit Indian PIN code.',
-        ]
-    );
+        $request->validate(
+            [
+                'title' => 'required',
+                'full_name' => 'required',
+                'account' => 'required',
+                'email' => 'required|email',
+
+                'phone' => ['required', 'regex:/^[6-9]\d{9}$/'],
+                'postal_code' => ['required', 'regex:/^\d{6}$/'],
+            ],
+            [
+                'telephone.regex' => 'The telephone number must be a valid 10-digit Indian phone number starting with 6, 7, 8, or 9.',
+                'postal_code.regex' => 'The zip code must be a valid 6-digit Indian PIN code.',
+            ]
+        );
 
         // Dump and die to inspect the validated data
         // dd($request->all());
@@ -57,19 +59,21 @@ class ContactController extends Controller
 
     public function update(Request $request, Contact $contact)
     {
-        $request->validate([
-            'title' => 'required',
-            'full_name' => 'required',
-            'account' => 'required',
-            'email' => 'required|email',
-            'phone' => ['required', 'regex:/^[6-9]\d{9}$/'],
-            'postal_code' => ['required', 'regex:/^\d{6}$/']
-        ], [
-            'telephone.regex' => 'The telephone number must be a valid 10-digit Indian phone number starting with 6, 7, 8, or 9.',
-            'postal_code.regex' => 'The zip code must be a valid 6-digit Indian PIN code.'
-           
-        ]
-    );
+        $request->validate(
+            [
+                'title' => 'required',
+                'full_name' => 'required',
+                'account' => 'required',
+                'email' => 'required|email',
+                'phone' => ['required', 'regex:/^[6-9]\d{9}$/'],
+                'postal_code' => ['required', 'regex:/^\d{6}$/']
+            ],
+            [
+                'telephone.regex' => 'The telephone number must be a valid 10-digit Indian phone number starting with 6, 7, 8, or 9.',
+                'postal_code.regex' => 'The zip code must be a valid 6-digit Indian PIN code.'
+
+            ]
+        );
 
         $contact->update($request->all());
 

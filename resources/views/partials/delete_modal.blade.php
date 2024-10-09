@@ -1,5 +1,3 @@
-
-
 <!-- Delete Modal Start -->
 <div class="modal fade" id="deleteModal" tabindex="-1" aria-labelledby="deleteModalLabel" aria-hidden="true">
   <div class="modal-dialog modal-dialog-centered modal-sm">
@@ -20,10 +18,10 @@
           Close
         </button>
         <form id="deleteForm" method="POST" action="">
-    @csrf
-    @method('DELETE')
-    <button type="submit" class="btn btn-danger">Delete</button>
-</form>
+          @csrf
+          @method('DELETE')
+          <button type="submit" class="btn btn-danger">Delete</button>
+        </form>
 
 
       </div>

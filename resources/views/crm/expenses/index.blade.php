@@ -27,7 +27,8 @@
                                             <div class="input-group-prepend bg-transparent">
                                                 <i class="input-group-text border-0 mdi mdi-magnify"></i>
                                             </div>
-                                            <input type="text" class="form-control bg-transparent border-0" placeholder="Search..." />
+                                            <input type="text" class="form-control bg-transparent border-0"
+                                                placeholder="Search..." />
                                         </div>
                                     </form>
                                 </div>
@@ -54,39 +55,44 @@
                                 </thead>
                                 <tbody>
                                     @foreach ($expenses as $expense)
-                                    <tr>
-                                        <td>{{ $loop->iteration }}</td>
-                                        <td>{{ $expense->date }}</td>
-                                        <td>{{ $expense->description }}</td>
-                                        <td>{{ $expense->user }}</td>
-                                        <td>{{ $expense->client }}</td>
-                                        <td>{{ $expense->project }}</td>
-                                        <td>{{ $expense->amount }}</td>
-                                        <td>
-                                            <div class="badge badge-success">{{ $expense->status }}</div>
-                                        </td>
-                                        <td>
-                                            <div class="btn-group" role="group" aria-label="Basic example">
-                                                <a href="{{ route('expenses.show', $expense->id) }}">
-                                                    <button type="button" class="btn btn-inverse-primary btn-icon mx-2" title="View">
-                                                        <i class="mdi mdi-eye"></i>
-                                                    </button>
-                                                </a>
-                                                <a href="{{ route('expenses.edit', $expense->id) }}">
-                                                    <button type="button" class="btn btn-inverse-dark btn-icon mx-2" title="Edit">
-                                                        <i class="mdi mdi-table-edit"></i>
-                                                    </button>
-                                                </a>
-                                                <form action="{{ route('expenses.destroy', $expense->id) }}" method="POST">
-                                                    @csrf
-                                                    @method('DELETE')
-                                                    <button type="submit" class="btn btn-inverse-danger btn-icon mx-2" title="Delete">
-                                                        <i class="mdi mdi-trash-can"></i>
-                                                    </button>
-                                                </form>
-                                            </div>
-                                        </td>
-                                    </tr>
+                                        <tr>
+                                            <td>{{ $loop->iteration }}</td>
+                                            <td>{{ $expense->date }}</td>
+                                            <td>{{ $expense->description }}</td>
+                                            <td>{{ $expense->user }}</td>
+                                            <td>{{ $expense->client }}</td>
+                                            <td>{{ $expense->project }}</td>
+                                            <td>{{ $expense->amount }}</td>
+                                            <td>
+                                                <div class="badge badge-success">{{ $expense->status }}</div>
+                                            </td>
+                                            <td>
+                                                <div class="btn-group" role="group" aria-label="Basic example">
+                                                    <a href="{{ route('expenses.show', $expense->id) }}">
+                                                        <button type="button" class="btn btn-inverse-primary btn-icon mx-2"
+                                                            title="View">
+                                                            <i class="mdi mdi-eye"></i>
+                                                        </button>
+                                                    </a>
+                                                    <a href="{{ route('expenses.edit', $expense->id) }}">
+                                                        <button type="button" class="btn btn-inverse-dark btn-icon mx-2"
+                                                            title="Edit">
+                                                            <i class="mdi mdi-table-edit"></i>
+                                                        </button>
+                                                    </a>
+                                                    <form action="{{ route('expenses.destroy', $expense->id) }}" method="POST"
+                                                        style="display:inline;">
+                                                        @csrf
+                                                        @method('DELETE')
+                                                        <button type="button" class="btn btn-inverse-danger btn-icon mx-2"
+                                                            title="Delete" data-toggle="modal" data-target="#deleteModal"
+                                                            data-id="{{ $expense->id }}">
+                                                            <i class="mdi mdi-trash-can"></i>
+                                                        </button>
+                                                    </form>
+                                                </div>
+                                            </td>
+                                        </tr>
                                     @endforeach
                                 </tbody>
                             </table>
@@ -103,10 +109,29 @@
         <footer class="footer">
             <div class="footer-inner-wraper">
                 <div class="d-sm-flex justify-content-center justify-content-sm-between">
-                    <span class="text-muted d-block text-center text-sm-left d-sm-inline-block">Copyright © Swadesh Properties 2024</span>
+                    <span class="text-muted d-block text-center text-sm-left d-sm-inline-block">Copyright © Swadesh
+                        Properties 2024</span>
                 </div>
             </div>
         </footer>
     </div>
 </div>
 @include('layout.footer')
+
+
+<!-- Include the Delete Modal -->
+@include('partials.delete_modal')
+
+
+
+<script>
+
+    $('#deleteModal').on('show.bs.modal', function (event) {
+        var button = $(event.relatedTarget);
+        var id = button.data('id');
+        var action = '{{ route("expenses.destroy", ":id") }}';
+        action = action.replace(':id', id);
+        $('#deleteForm').attr('action', action);
+    });
+
+</script>

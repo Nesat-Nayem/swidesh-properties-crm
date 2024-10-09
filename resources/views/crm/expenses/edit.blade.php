@@ -57,7 +57,7 @@
                                     <div class="col-lg-4 col-6">
                                         <div class="form-group">
                                             <label for="amount">Amount</label>
-                                            <input type="text" class="form-control" id="amount" name="amount" value="{{ $expense->amount }}" required>
+                                            <input type="number" class="form-control" id="amount" name="amount" value="{{ $expense->amount }}" required>
                                         </div>
                                     </div>
                                     <div class="col-lg-4 col-6">
