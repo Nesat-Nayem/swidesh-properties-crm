@@ -134,14 +134,11 @@
                 </div>
             </div>
             <div class="col-lg-6 col-12">
-                <div class="form-group">
-                    <label for="last_contacted">Last Contacted</label>
-                    <input type="date" class="form-control" name="last_contacted"
-    value="{{ old('last_contacted') ?? optional($lead->last_contacted)->format('Y-m-d') }}">
-
-                    <!-- <input type="date" class="form-control" name="last_contacted" value="{{ old('last_contacted', $lead->last_contacted ?? '') }}" placeholder="Enter Last Contacted"> -->
-                </div>
+            <div class="form-group">
+            <label for="last_contacted">Last Contacted</label>
+            <input type="date" class="form-control" name="last_contacted" value="{{ old('last_contacted', optional($lead->last_contacted)->format('Y-m-d')) }}" placeholder="Enter Last Contacted">
             </div>
+        </div>
         </div>
     </div>
 
@@ -154,19 +151,14 @@
                     <input type="text" class="form-control" name="total_budget" value="{{ old('total_budget', $lead->total_budget ?? '') }}" placeholder="Enter Total Budget">
                 </div>
             </div>
-            <!-- <div class="col-lg-12 col-12">
+            <div class="col-lg-12 col-12">
                 <div class="form-group">
                     <label for="target_date">Target Date*</label>
-                    <input type="date" class="form-control" name="target_date" value="{{ old('target_date', $lead->target_date ?? '') }}">
+                    <input type="date" class="form-control" name="target_date" value="{{ old('target_date',optional( $lead->target_date ?? '')->format('Y-m-d')) }}">
                 </div>
-            </div> -->
-            <div class="col-lg-12 col-12">
-    <div class="form-group">
-        <label for="target_date">Target Date*</label>
-        <input type="date" class="form-control" name="target_date"
-            value="{{ old('target_date', optional($lead->target_date)->format('Y-m-d')) }}">
-    </div>
-</div>
+            </div>
+            
+
 
             <div class="col-lg-12 col-12">
                 <div class="form-group">

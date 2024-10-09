@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+
 use App\Models\Lead;
 use Illuminate\Http\Request;
 
@@ -17,7 +18,10 @@ class LeadController extends Controller
 
     public function create()
     {
-        return view('crm.leads.create');
+        // return view('crm.leads.create');
+        $lead = new Lead();
+        return view('crm.leads.create', compact('lead'));
+    
     }
 
     public function store(Request $request)

@@ -1,6 +1,7 @@
 @include('layout.header')
 <div class="container-fluid page-body-wrapper">
 @include('crm.sidebar')
+
     <div class="main-panel">
         <div class="content-wrapper">
             <div class="page-header">
