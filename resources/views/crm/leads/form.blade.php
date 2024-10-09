@@ -50,14 +50,15 @@
                 </div>
             </div>
             <div class="col-lg-5 col-6">
-                <div class="form-group">
-                    <label for="phone_type">Phone Type</label>
-                    <select class="form-control" name="phone_type">
-                        <option>Hot Call</option>
-                        <option>Cold Call</option>
-                    </select>
-                </div>
-            </div>
+    <div class="form-group">
+        <label for="phone_type">Phone Type</label>
+        <select class="form-control" name="phone_type">
+            <option value="Hot Call" {{ old('phone_type', $lead->phone_type ?? '') == 'Hot Call' ? 'selected' : '' }}>Hot Call</option>
+            <option value="Cold Call" {{ old('phone_type', $lead->phone_type ?? '') == 'Cold Call' ? 'selected' : '' }}>Cold Call</option>
+        </select>
+    </div>
+</div>
+
             <div class="col-lg-6 col-6">
                 <div class="form-group">
                     <label for="telephone">Telephone</label>

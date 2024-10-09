@@ -6,11 +6,11 @@
     <div class="main-panel">
         <div class="content-wrapper">
             <div class="page-header">
-                <h3 class="page-title">Leads List</h3>
+                <h3 class="page-title">Cold Leads</h3>
                 <nav aria-label="breadcrumb">
                     <ol class="breadcrumb">
                         <li class="breadcrumb-item"><a href="{{ route('leads.index') }}">Leads</a></li>
-                        <li class="breadcrumb-item active" aria-current="page">Leads List</li>
+                        <li class="breadcrumb-item active" aria-current="page">Cold Leads</li>
                     </ol>
                 </nav>
             </div>
@@ -105,10 +105,9 @@
 @include('partials.delete_modal')
 
 
-@push('scripts')
 <script>
-    $(document).ready(function() {
-        $('#deleteModal').on('show.bs.modal', function(event) {
+
+$('#deleteModal').on('show.bs.modal', function(event) {
     var button = $(event.relatedTarget);
     var id = button.data('id');
     var action = '{{ route("leads.destroy", ":id") }}';
@@ -116,7 +115,4 @@
     $('#deleteForm').attr('action', action);
 });
 
-
-    });
 </script>
-@endpush
