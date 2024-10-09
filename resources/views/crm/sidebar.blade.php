@@ -31,6 +31,9 @@
           <li class="nav-item">
             <a class="nav-link" href="contacts">Contacts</a>
           </li>
+          <li class="nav-item">
+            <a class="nav-link" href="followups">Follow Up</a>
+          </li>
 
           <li class="nav-item">
             <a class="nav-link" href="{{ route('leads.index') }}">
@@ -156,6 +159,7 @@
         <span class="menu-title">Reports</span>
       </a>
     </li>
+
     <li class="nav-item">
       <a class="nav-link" href="/">
         <span class="icon-bg"><i class="mdi mdi-settings  menu-icon"></i></span>
