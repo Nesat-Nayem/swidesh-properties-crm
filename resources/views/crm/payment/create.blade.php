@@ -32,7 +32,7 @@
                                     <div class="col-lg-6 col-6">
                                         <div class="form-group">
                                             <label for="amount">Amount</label>
-                                            <input type="text" class="form-control" id="amount" name="amount" placeholder="Enter Amount" required>
+                                            <input type="number" class="form-control" id="amount" name="amount" placeholder="Enter Amount" required>
                                         </div>
                                     </div>
                                     <div class="col-lg-4 col-6">
