@@ -58,6 +58,7 @@ class LeadController extends Controller
 
     public function edit(Lead $lead)
     {
+        // dd($lead);
         return view('crm.leads.edit', compact('lead'));
     }
 

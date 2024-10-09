@@ -1,3 +1,14 @@
+<!-- @if ($errors->any())
+    <div class="alert alert-danger">
+        <ul>
+            @foreach ($errors->all() as $error)
+                <li>{{ $error }}</li>
+            @endforeach
+        </ul>
+    </div>
+@endif -->
+
+
 <div class="row">
     <div class="col-lg-6">
         <h4 class="mb-4 pb-4" style="border-bottom: 1px solid #000">Basic Details</h4>
@@ -9,7 +20,7 @@
                 </div>
             </div>
             <div class="col-lg-2 col-6">
-                <div class="form-group">
+                <!-- <div class="form-group">
                     <label for="select">Select</label>
                     <select class="form-control" name="select">
                         <option>Mr.</option>
@@ -17,7 +28,20 @@
                         <option>Mrs.</option>
                         <option>Dr.</option>
                     </select>
-                </div>
+                </div> -->
+
+                <!-- Assuming 'title_prefix' is the correct attribute name in your model -->
+<div class="form-group">
+    <label for="title_prefix">Select</label>
+    <select class="form-control" name="title_prefix">
+        <option value="Mr." {{ (old('title_prefix', $lead->title_prefix ?? '') == 'Mr.') ? 'selected' : '' }}>Mr.</option>
+        <option value="Ms." {{ (old('title_prefix', $lead->title_prefix ?? '') == 'Ms.') ? 'selected' : '' }}>Ms.</option>
+        <option value="Mrs." {{ (old('title_prefix', $lead->title_prefix ?? '') == 'Mrs.') ? 'selected' : '' }}>Mrs.</option>
+        <option value="Dr." {{ (old('title_prefix', $lead->title_prefix ?? '') == 'Dr.') ? 'selected' : '' }}>Dr.</option>
+    </select>
+</div>
+
+
             </div>
             <div class="col-lg-5 col-6">
                 <div class="form-group">
@@ -62,12 +86,13 @@
                 <div class="form-group">
                     <label for="status">Select Status</label>
                     <select class="form-control" name="status">
-                        <option>Converted</option>
-                        <option>Qualified</option>
-                        <option>Proposal Sent</option>
-                        <option>Contacted</option>
-                        <option>DisQualified</option>
-                    </select>
+    <option value="Converted" {{ (old('status', $lead->status ?? '') == 'Converted') ? 'selected' : '' }}>Converted</option>
+    <option value="Qualified" {{ (old('status', $lead->status ?? '') == 'Qualified') ? 'selected' : '' }}>Qualified</option>
+    <option value="Proposal Sent" {{ (old('status', $lead->status ?? '') == 'Proposal Sent') ? 'selected' : '' }}>Proposal Sent</option>
+    <option value="Contacted" {{ (old('status', $lead->status ?? '') == 'Contacted') ? 'selected' : '' }}>Contacted</option>
+    <option value="DisQualified" {{ (old('status', $lead->status ?? '') == 'DisQualified') ? 'selected' : '' }}>DisQualified</option>
+</select>
+
                 </div>
             </div>
         </div>
@@ -111,7 +136,10 @@
             <div class="col-lg-6 col-12">
                 <div class="form-group">
                     <label for="last_contacted">Last Contacted</label>
-                    <input type="date" class="form-control" name="last_contacted" value="{{ old('last_contacted', $lead->last_contacted ?? '') }}" placeholder="Enter Last Contacted">
+                    <input type="date" class="form-control" name="last_contacted"
+    value="{{ old('last_contacted') ?? optional($lead->last_contacted)->format('Y-m-d') }}">
+
+                    <!-- <input type="date" class="form-control" name="last_contacted" value="{{ old('last_contacted', $lead->last_contacted ?? '') }}" placeholder="Enter Last Contacted"> -->
                 </div>
             </div>
         </div>
@@ -126,12 +154,20 @@
                     <input type="text" class="form-control" name="total_budget" value="{{ old('total_budget', $lead->total_budget ?? '') }}" placeholder="Enter Total Budget">
                 </div>
             </div>
-            <div class="col-lg-12 col-12">
+            <!-- <div class="col-lg-12 col-12">
                 <div class="form-group">
                     <label for="target_date">Target Date*</label>
                     <input type="date" class="form-control" name="target_date" value="{{ old('target_date', $lead->target_date ?? '') }}">
                 </div>
-            </div>
+            </div> -->
+            <div class="col-lg-12 col-12">
+    <div class="form-group">
+        <label for="target_date">Target Date*</label>
+        <input type="date" class="form-control" name="target_date"
+            value="{{ old('target_date', optional($lead->target_date)->format('Y-m-d')) }}">
+    </div>
+</div>
+
             <div class="col-lg-12 col-12">
                 <div class="form-group">
                     <label for="content_type">Content Type</label>
