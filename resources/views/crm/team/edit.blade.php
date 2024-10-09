@@ -24,8 +24,8 @@
                                 @csrf
 
                                 @csrf
-                                           <!-- Display Validation Errors -->
-                                           @if ($errors->any())
+                                <!-- Display Validation Errors -->
+                                @if ($errors->any())
                                     <div class="alert alert-danger">
                                         <ul>
                                             @foreach ($errors->all() as $error)
@@ -35,7 +35,7 @@
                                     </div>
                                 @endif
 
-                                
+
                                 @method('PUT')
                                 <div class="row">
                                     <div class="col-lg-2">
@@ -51,25 +51,29 @@
                                     <div class="col-lg-10">
                                         <div class="form-group">
                                             <label for="full_name">Full Name</label>
-                                            <input type="text" class="form-control" id="full_name" name="full_name" value="{{ $team->full_name }}" required>
+                                            <input type="text" class="form-control" id="full_name" name="full_name"
+                                                value="{{ $team->full_name }}" required>
                                         </div>
                                     </div>
                                     <div class="col-lg-12">
                                         <div class="form-group">
                                             <label for="email">Email Address</label>
-                                            <input type="email" class="form-control" id="email" name="email" value="{{ $team->email }}" required>
+                                            <input type="email" class="form-control" id="email" name="email"
+                                                value="{{ $team->email }}" required>
                                         </div>
                                     </div>
                                     <div class="col-lg-12">
                                         <div class="form-group">
                                             <label for="phone">Phone</label>
-                                            <input type="text" class="form-control" id="phone" name="phone" value="{{ $team->phone }}" required>
+                                            <input type="text" class="form-control" id="phone" name="phone"
+                                                value="{{ $team->phone }}" required>
                                         </div>
                                     </div>
                                     <div class="col-lg-12">
                                         <div class="form-group">
                                             <label for="position">Job Title</label>
-                                            <input type="text" class="form-control" id="position" name="position" value="{{ $team->position }}" required>
+                                            <input type="text" class="form-control" id="position" name="position"
+                                                value="{{ $team->position }}" required>
                                         </div>
                                     </div>
                                     <div class="col-lg-12">
@@ -78,7 +82,8 @@
                                             <select class="form-control" id="role" name="role" required>
                                                 <option value="Administrator" {{ $team->role == 'Administrator' ? 'selected' : '' }}>Administrator</option>
                                                 <option value="Management" {{ $team->role == 'Management' ? 'selected' : '' }}>Management</option>
-                                                <option value="Staff" {{ $team->role == 'Staff' ? 'selected' : '' }}>Staff</option>
+                                                <option value="Staff" {{ $team->role == 'Staff' ? 'selected' : '' }}>Staff
+                                                </option>
                                                 <option value="Accounting" {{ $team->role == 'Accounting' ? 'selected' : '' }}>Accounting</option>
                                             </select>
                                         </div>
@@ -96,7 +101,8 @@
         <footer class="footer">
             <div class="footer-inner-wraper">
                 <div class="d-sm-flex justify-content-center justify-content-sm-between">
-                    <span class="text-muted d-block text-center text-sm-left d-sm-inline-block">Copyright © Swadesh Properties 2024</span>
+                    <span class="text-muted d-block text-center text-sm-left d-sm-inline-block">Copyright © Swadesh
+                        Properties 2024</span>
                 </div>
             </div>
         </footer>
