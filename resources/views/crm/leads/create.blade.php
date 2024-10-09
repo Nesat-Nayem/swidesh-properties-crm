@@ -16,9 +16,20 @@
             <div class="row">
                 <div class="col-lg-12 grid-margin stretch-card">
                     <div class="card">
+
                         <div class="card-body">
                             <form class="forms-sample" action="{{ route('leads.store') }}" method="POST">
                                 @csrf
+                                        <!-- Display Validation Errors -->
+        @if ($errors->any())
+            <div class="alert alert-danger">
+                <ul>
+                    @foreach ($errors->all() as $error)
+                        <li>{{ $error }}</li>
+                    @endforeach
+                </ul>
+            </div>
+        @endif
                                 @include('crm.leads.form')
                                 <button type="submit" class="btn btn-primary mr-2">Submit</button>
                                 <a href="{{ route('leads.index') }}" class="btn btn-light">Cancel</a>
