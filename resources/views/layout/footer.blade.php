@@ -1,6 +1,7 @@
 
     
     <!-- container-scroller -->
+     
     <!-- plugins:js -->
  <!-- JS Files -->
  <script src="{{ asset('crm/assets/vendors/js/vendor.bundle.base.js') }}"></script>

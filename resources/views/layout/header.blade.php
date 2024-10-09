@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
 
+
+
 <head>
   <!-- Required meta tags -->
   <meta charset="utf-8">
@@ -33,8 +35,15 @@
         class="navbar default-layout-navbar col-lg-12 col-12 p-0 fixed-top d-flex flex-row">
         <div
           class="text-center navbar-brand-wrapper d-flex align-items-center justify-content-center">
-          <a class="navbar-brand brand-logo bg-white" href="index.html"><img src="crm/assets/images/logo.png" alt="logo" /></a>
-          <a class="navbar-brand brand-logo-mini" href="index.html"><img src="crm/assets/images/logo.png" alt="logo" /></a>
+          <!-- <a class="navbar-brand brand-logo bg-white" href="index.html"><img src="crm/assets/images/logo.png" alt="logo" /></a>
+          <a class="navbar-brand brand-logo-mini" href="index.html"><img src="crm/assets/images/logo.png" alt="logo" /></a> -->
+
+          <a class="navbar-brand brand-logo bg-white" href="{{ url('index.html') }}">
+    <img src="{{ asset('crm/assets/images/logo.png') }}" alt="logo" />
+</a>
+<a class="navbar-brand brand-logo-mini" href="{{ url('index.html') }}">
+    <img src="{{ asset('crm/assets/images/logo.png') }}" alt="logo" />
+</a>
         </div>
         <div class="navbar-menu-wrapper d-flex align-items-stretch">
           <button
@@ -139,7 +148,9 @@
                 data-toggle="dropdown"
                 aria-expanded="false">
                 <div class="nav-profile-img">
-                  <img src="crm/assets/images/faces/face1.jpg" alt="image" />
+                  <!-- <img src="crm/assets/images/faces/face1.jpg" alt="image" /> -->
+                  <img src="{{ asset('crm/assets/images/faces/face1.jpg') }}" alt="image" />
+
                 </div>
                 <div class="nav-profile-text">
                   <p class="mb-1 text-black">David Smith</p>
