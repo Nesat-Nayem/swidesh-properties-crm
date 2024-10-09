@@ -32,8 +32,23 @@
                                 </a>
                             </div>
 
+                       
+
                             <form class="forms-sample" action="{{ route('contacts.store') }}" method="POST">
                                 @csrf
+
+                                                 <!-- Display Validation Errors -->
+                                                 @if ($errors->any())
+                                    <div class="alert alert-danger">
+                                        <ul>
+                                            @foreach ($errors->all() as $error)
+                                                <li>{{ $error }}</li>
+                                            @endforeach
+                                        </ul>
+                                    </div>
+                                @endif
+
+                                
                                 <div class="row">
                                     <div class="col-lg-2 col-6">
                                         <div class="form-group">
@@ -49,20 +64,23 @@
                                     <div class="col-lg-5 col-6">
                                         <div class="form-group">
                                             <label for="full_name">Full Name</label>
-                                            <input type="text" class="form-control" id="full_name" name="full_name" placeholder="Enter Full Name" required>
+                                            <input type="text" class="form-control" id="full_name" name="full_name"
+                                                placeholder="Enter Full Name" required>
                                         </div>
                                     </div>
                                     <div class="col-lg-5 col-6">
                                         <div class="form-group">
                                             <label for="account">Accounts</label>
-                                            <input type="text" class="form-control" id="account" name="account" placeholder="Enter Accounts Name" required>
+                                            <input type="text" class="form-control" id="account" name="account"
+                                                placeholder="Enter Accounts Name" required>
                                         </div>
                                     </div>
 
                                     <div class="col-lg-4 col-6">
                                         <div class="form-group">
                                             <label for="email">Email</label>
-                                            <input type="email" class="form-control" id="email" name="email" placeholder="Enter Email" required>
+                                            <input type="email" class="form-control" id="email" name="email"
+                                                placeholder="Enter Email" required>
                                         </div>
                                     </div>
                                     <div class="col-lg-4 col-6">
@@ -81,14 +99,16 @@
                                     <div class="col-lg-4 col-6">
                                         <div class="form-group">
                                             <label for="phone">Phone Number</label>
-                                            <input type="text" class="form-control" id="phone" name="phone" placeholder="+91 Enter Mobile" required>
+                                            <input type="number" class="form-control" id="phone" name="phone"
+                                                placeholder="+91 Enter Mobile" required>
                                         </div>
                                     </div>
 
                                     <div class="col-lg-12 col-12">
                                         <div class="form-group">
                                             <label for="address">Address</label>
-                                            <textarea class="form-control" id="address" name="address" rows="4"></textarea>
+                                            <textarea class="form-control" id="address" name="address"
+                                                rows="4"></textarea>
                                         </div>
                                     </div>
 
@@ -124,7 +144,8 @@
                                     <div class="col-lg-3 col-6">
                                         <div class="form-group">
                                             <label for="postal_code">Postal Code</label>
-                                            <input type="text" class="form-control" id="postal_code" name="postal_code" placeholder="Enter Postal Code">
+                                            <input type="number" class="form-control" id="postal_code"
+                                                name="postal_code" placeholder="Enter Postal Code">
                                         </div>
                                     </div>
                                     <div class="col-lg-3 col-6">
@@ -147,26 +168,30 @@
                                     <div class="col-lg-6 col-6">
                                         <div class="form-group">
                                             <label for="remarks">Enter Remarks Here</label>
-                                            <input type="text" class="form-control" id="remarks" name="remarks" placeholder="Enter Remarks Here">
+                                            <input type="text" class="form-control" id="remarks" name="remarks"
+                                                placeholder="Enter Remarks Here">
                                         </div>
                                     </div>
                                     <div class="col-lg-6 col-6">
                                         <div class="form-group">
                                             <label for="next_followup_date">Date and Time of Next Followup</label>
-                                            <input type="date" class="form-control" id="next_followup_date" name="next_followup_date">
+                                            <input type="date" class="form-control" id="next_followup_date"
+                                                name="next_followup_date">
                                         </div>
                                     </div>
                                     <div class="col-lg-6 col-6">
                                         <div class="form-group">
                                             <label for="next_followup_time"> </label>
-                                            <input type="time" class="form-control" id="next_followup_time" name="next_followup_time">
+                                            <input type="time" class="form-control" id="next_followup_time"
+                                                name="next_followup_time">
                                         </div>
                                     </div>
 
                                     <div class="col-lg-12 col-12">
                                         <div class="form-group">
                                             <label for="description">Description</label>
-                                            <textarea class="form-control" id="description" name="description" rows="4"></textarea>
+                                            <textarea class="form-control" id="description" name="description"
+                                                rows="4"></textarea>
                                         </div>
                                     </div>
                                 </div>
@@ -186,7 +211,8 @@
         <footer class="footer">
             <div class="footer-inner-wraper">
                 <div class="d-sm-flex justify-content-center justify-content-sm-between">
-                    <span class="text-muted d-block text-center text-sm-left d-sm-inline-block">Copyright © Swadesh Properties 2024</span>
+                    <span class="text-muted d-block text-center text-sm-left d-sm-inline-block">Copyright © Swadesh
+                        Properties 2024</span>
                 </div>
             </div>
         </footer>

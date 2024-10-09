@@ -2,7 +2,7 @@
 <div class="container-fluid page-body-wrapper">
     @include('crm.sidebar')
 
-    
+
     <div class="main-panel">
         <div class="content-wrapper">
             <div class="page-header">
@@ -25,7 +25,8 @@
                                             <div class="input-group-prepend bg-transparent">
                                                 <i class="input-group-text border-0 mdi mdi-magnify"></i>
                                             </div>
-                                            <input type="text" class="form-control bg-transparent border-0" placeholder="Search...">
+                                            <input type="text" class="form-control bg-transparent border-0"
+                                                placeholder="Search...">
                                         </div>
                                     </form>
                                 </div>
@@ -63,23 +64,27 @@
                                             <td>
                                                 <div class="btn-group" role="group" aria-label="Basic example">
                                                     <a href="{{ route('leads.show', $lead->id) }}">
-                                                        <button type="button" class="btn btn-inverse-primary btn-icon mx-2" title="View">
+                                                        <button type="button" class="btn btn-inverse-primary btn-icon mx-2"
+                                                            title="View">
                                                             <i class="mdi mdi-eye"></i>
                                                         </button>
                                                     </a>
                                                     <a href="{{ route('leads.edit', $lead->id) }}">
-                                                        <button type="button" class="btn btn-inverse-dark btn-icon mx-2" title="Edit">
+                                                        <button type="button" class="btn btn-inverse-dark btn-icon mx-2"
+                                                            title="Edit">
                                                             <i class="mdi mdi-table-edit"></i>
                                                         </button>
                                                     </a>
-                                                    <form action="{{ route('leads.destroy', $lead->id) }}" method="POST" style="display:inline;">
-    @csrf
-    @method('DELETE')
-    <button type="button" class="btn btn-inverse-danger btn-icon mx-2" title="Delete"
-        data-toggle="modal" data-target="#deleteModal" data-id="{{ $lead->id }}">
-        <i class="mdi mdi-trash-can"></i>
-    </button>
-</form>
+                                                    <form action="{{ route('leads.destroy', $lead->id) }}" method="POST"
+                                                        style="display:inline;">
+                                                        @csrf
+                                                        @method('DELETE')
+                                                        <button type="button" class="btn btn-inverse-danger btn-icon mx-2"
+                                                            title="Delete" data-toggle="modal" data-target="#deleteModal"
+                                                            data-id="{{ $lead->id }}">
+                                                            <i class="mdi mdi-trash-can"></i>
+                                                        </button>
+                                                    </form>
 
                                                 </div>
                                             </td>
@@ -108,13 +113,12 @@
 
 <script>
 
-$('#deleteModal').on('show.bs.modal', function(event) {
-    var button = $(event.relatedTarget);
-    var id = button.data('id');
-    var action = '{{ route("leads.destroy", ":id") }}';
-    action = action.replace(':id', id);
-    $('#deleteForm').attr('action', action);
-});
+    $('#deleteModal').on('show.bs.modal', function (event) {
+        var button = $(event.relatedTarget);
+        var id = button.data('id');
+        var action = '{{ route("leads.destroy", ":id") }}';
+        action = action.replace(':id', id);
+        $('#deleteForm').attr('action', action);
+    });
 
 </script>
-
