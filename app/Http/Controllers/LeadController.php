@@ -122,5 +122,6 @@ class LeadController extends Controller
         return redirect()->route('leads.index')->with('success', 'Lead deleted successfully.');
     }
     
+    
 
 }

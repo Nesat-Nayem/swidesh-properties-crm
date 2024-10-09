@@ -73,14 +73,14 @@
                                                         </button>
                                                     </a>
                                                     <form action="{{ route('leads.destroy', $lead->id) }}" method="POST" style="display:inline;">
-                                                        @csrf
-                                                        @method('DELETE')
-                                                        <button type="button" class="btn btn-inverse-danger btn-icon mx-2" title="Delete"
-    data-toggle="modal" data-target="#deleteModal" data-id="{{ $lead->id }}">
-    <i class="mdi mdi-trash-can"></i>
-</button>
+    @csrf
+    @method('DELETE')
+    <button type="button" class="btn btn-inverse-danger btn-icon mx-2" title="Delete"
+        data-toggle="modal" data-target="#deleteModal" data-id="{{ $lead->id }}">
+        <i class="mdi mdi-trash-can"></i>
+    </button>
+</form>
 
-                                                    </form>
                                                 </div>
                                             </td>
                                         </tr>
@@ -105,10 +105,10 @@
 @include('partials.delete_modal')
 
 
-@push('scripts')
+
 <script>
-    $(document).ready(function() {
-        $('#deleteModal').on('show.bs.modal', function(event) {
+
+$('#deleteModal').on('show.bs.modal', function(event) {
     var button = $(event.relatedTarget);
     var id = button.data('id');
     var action = '{{ route("leads.destroy", ":id") }}';
@@ -116,7 +116,5 @@
     $('#deleteForm').attr('action', action);
 });
 
-
-    });
 </script>
-@endpush
+
