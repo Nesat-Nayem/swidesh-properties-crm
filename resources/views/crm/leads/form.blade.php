@@ -73,7 +73,7 @@
             <div class="col-lg-6 col-6">
                 <div class="form-group">
                     <label for="lead_value">Lead Value ($)</label>
-                    <input type="text" class="form-control" name="lead_value" value="{{ old('lead_value', $lead->lead_value ?? '') }}" placeholder="Enter Lead Value ($)">
+                    <input type="number" class="form-control" name="lead_value" value="{{ old('lead_value', $lead->lead_value ?? '') }}" placeholder="Enter Lead Value ($)">
                 </div>
             </div>
             <div class="col-lg-6 col-6">
@@ -148,7 +148,7 @@
             <div class="col-lg-12 col-12">
                 <div class="form-group">
                     <label for="total_budget">Total Budget*</label>
-                    <input type="text" class="form-control" name="total_budget" value="{{ old('total_budget', $lead->total_budget ?? '') }}" placeholder="Enter Total Budget">
+                    <input type="number" class="form-control" name="total_budget" value="{{ old('total_budget', $lead->total_budget ?? '') }}" placeholder="Enter Total Budget">
                 </div>
             </div>
             <div class="col-lg-12 col-12">

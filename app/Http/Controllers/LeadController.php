@@ -30,7 +30,8 @@ class LeadController extends Controller
             'title' => 'required',
             'full_name' => 'required',
             'phone_type' => 'required',
-            'telephone' => 'required',
+            'telephone' => ['required', 'regex:/^[6-9]\d{9}$/'],
+            'zip_code' => ['required', 'regex:/^\d{6}$/'],
             'email' => 'required|email',
             'lead_value' => 'required|numeric',
             'assigned' => 'required',
@@ -45,9 +46,12 @@ class LeadController extends Controller
             'street' => 'required',
             'city' => 'required',
             'state' => 'required',
-            'zip_code' => 'required',
+      
             'country' => 'required',
             'last_contacted' => 'nullable|date',
+        ], [
+            'telephone.regex' => 'The telephone number must be a valid 10-digit Indian phone number starting with 6, 7, 8, or 9.',
+            'zip_code.regex' => 'The zip code must be a valid 6-digit Indian PIN code.',
         ]);
 
         Lead::create($request->all());
@@ -72,7 +76,8 @@ class LeadController extends Controller
             'title' => 'required',
             'full_name' => 'required',
             'phone_type' => 'required',
-            'telephone' => 'required',
+            'telephone' => ['required', 'regex:/^[6-9]\d{9}$/'],
+            'zip_code' => ['required', 'regex:/^\d{6}$/'],
             'email' => 'required|email',
             'lead_value' => 'required|numeric',
             'assigned' => 'required',
@@ -87,9 +92,11 @@ class LeadController extends Controller
             'street' => 'required',
             'city' => 'required',
             'state' => 'required',
-            'zip_code' => 'required',
             'country' => 'required',
             'last_contacted' => 'nullable|date',
+        ], [
+            'telephone.regex' => 'The telephone number must be a valid 10-digit Indian phone number starting with 6, 7, 8, or 9.',
+            'zip_code.regex' => 'The zip code must be a valid 6-digit Indian PIN code.',
         ]);
 
         $lead->update($request->all());
