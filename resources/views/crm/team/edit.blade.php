@@ -22,6 +22,20 @@
                         <div class="card-body">
                             <form class="forms-sample" action="{{ route('teams.update', $team->id) }}" method="POST">
                                 @csrf
+
+                                @csrf
+                                           <!-- Display Validation Errors -->
+                                           @if ($errors->any())
+                                    <div class="alert alert-danger">
+                                        <ul>
+                                            @foreach ($errors->all() as $error)
+                                                <li>{{ $error }}</li>
+                                            @endforeach
+                                        </ul>
+                                    </div>
+                                @endif
+
+                                
                                 @method('PUT')
                                 <div class="row">
                                     <div class="col-lg-2">

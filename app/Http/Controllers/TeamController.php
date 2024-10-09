@@ -25,9 +25,11 @@ class TeamController extends Controller
             'position' => 'required',
             'role' => 'required',
             'email' => 'required|email',
-            'phone' => 'required',
             'last_seen' => 'nullable|date',
-        ]);
+            'phone' => ['required', 'regex:/^[6-9]\d{9}$/'],
+        ], [
+            'phone.regex' => 'The telephone number must be a valid 10-digit Indian phone number starting with 6, 7, 8, or 9.',
+     ]);
 
         Team::create($request->all());
 
@@ -51,9 +53,12 @@ class TeamController extends Controller
             'position' => 'required',
             'role' => 'required',
             'email' => 'required|email',
-            'phone' => 'required',
+
             'last_seen' => 'nullable|date',
-        ]);
+            'phone' => ['required', 'regex:/^[6-9]\d{9}$/'],
+        ], [
+            'phone.regex' => 'The telephone number must be a valid 10-digit Indian phone number starting with 6, 7, 8, or 9.',
+     ]);
 
         $team->update($request->all());
 

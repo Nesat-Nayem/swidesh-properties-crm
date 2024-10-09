@@ -73,13 +73,16 @@
                                                         <i class="mdi mdi-table-edit"></i>
                                                     </button>
                                                 </a>
-                                                <form action="{{ route('teams.destroy', $team->id) }}" method="POST">
-                                                    @csrf
-                                                    @method('DELETE')
-                                                    <button type="submit" class="btn btn-inverse-danger btn-icon mx-2" title="Delete">
-                                                        <i class="mdi mdi-trash-can"></i>
-                                                    </button>
-                                                </form>
+                                                <form action="{{ route('teams.destroy', $team->id) }}" method="POST"
+                                                        style="display:inline;">
+                                                        @csrf
+                                                        @method('DELETE')
+                                                        <button type="button" class="btn btn-inverse-danger btn-icon mx-2"
+                                                            title="Delete" data-toggle="modal" data-target="#deleteModal"
+                                                            data-id="{{ $team->id }}">
+                                                            <i class="mdi mdi-trash-can"></i>
+                                                        </button>
+                                                    </form>
                                             </div>
                                         </td>
                                     </tr>
@@ -106,3 +109,21 @@
     </div>
 </div>
 @include('layout.footer')
+
+
+<!-- Include the Delete Modal -->
+@include('partials.delete_modal')
+
+
+
+<script>
+
+    $('#deleteModal').on('show.bs.modal', function (event) {
+        var button = $(event.relatedTarget);
+        var id = button.data('id');
+        var action = '{{ route("teams.destroy", ":id") }}';
+        action = action.replace(':id', id);
+        $('#deleteForm').attr('action', action);
+    });
+
+</script>

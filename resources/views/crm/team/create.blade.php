@@ -22,6 +22,18 @@
                         <div class="card-body">
                             <form class="forms-sample" action="{{ route('teams.store') }}" method="POST">
                                 @csrf
+                                           <!-- Display Validation Errors -->
+                                           @if ($errors->any())
+                                    <div class="alert alert-danger">
+                                        <ul>
+                                            @foreach ($errors->all() as $error)
+                                                <li>{{ $error }}</li>
+                                            @endforeach
+                                        </ul>
+                                    </div>
+                                @endif
+
+                                
                                 <div class="row">
                                     <div class="col-lg-2">
                                         <div class="form-group">
@@ -48,7 +60,7 @@
                                     <div class="col-lg-12">
                                         <div class="form-group">
                                             <label for="phone">Phone</label>
-                                            <input type="text" class="form-control" id="phone" name="phone" placeholder="Enter Phone" required>
+                                            <input type="number" class="form-control" id="phone" name="phone" placeholder="Enter Phone" required>
                                         </div>
                                     </div>
                                     <div class="col-lg-12">
